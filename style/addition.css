@@ -1,0 +1,17 @@
+.nav-background {
+    height: 120px;
+    width: 100vw;
+    background-color: #0F2C4E;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+.nav-image {
+    position: relative;
+    z-index: 5;
+}
+
+.nav-bar {
+    z-index: 10;
+}
