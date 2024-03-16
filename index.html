@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/about.css">
     <link rel="stylesheet" href="style/university web.css">
-    <link rel="stylesheet" href="style/addition.css">
+    <!-- <link rel="stylesheet" href="style/addition.css"> -->
 
 
 
@@ -33,21 +33,14 @@
         </ul> -->
 
 
-
-
     <div id="abc">
-        <!--
-        <video autoplay muted loop id="myVideo">
-            
-             <source src="img/video1.mp4" type="video/mp4"> 
-          </video>
-          -->
+        <!-- <video autoplay muted loop id="myVideo">
+                <source src="video2.mp4" type="video/mp4">
+            </video> -->
 
-        <div class="nav-background"></div>
         <img src="img/video.png" alt="" width="100%" class="nav-image">
-        <nav class="nav-bar">
-            <img class="photo" src="img/logo.png">
-
+        <header class="header">
+            <img class="photo" src="img/LOGO-removebg-preview (1).png">
             <ul>
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">Staff</a></li>
@@ -56,12 +49,10 @@
                 <li><a href="#">News</a></li>
                 <li><a href="#">Events</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="page/login.html">Login</a></li>
+                <li><a href="#">Login</a></li>
             </ul>
-        </nav>
-
+        </header>
     </div>
-
 
 
     <div class="line">
@@ -110,7 +101,7 @@
         <div class="contner">
             <div class="dep">
                 <h1>Departments</h1>
-                <div class="linee"></div>
+                <!-- <div class="linee"></div> -->
                 <span><img class="r" src="img/WhatsApp Image 2024-03-05 at 1.34.26 PM (1).jpeg"></span>
                 <div class="overlay">
                     <p class="tex"> Information Technology</p>
@@ -142,16 +133,14 @@
 
 
 
-    <div class="news">
-        <div class="d1">
-            <img src="img/Picture6.png" alt="not found" height="55px">
-        </div>
-        <div class="d2">
-            <h1>Latest</h1>
-        </div>
-        <div class="d3">
-            <h1>News</h1>
-        </div>
+    <div class="title5"></div>
+    <div class="d1">
+        <img src="img/Picture6.png" alt="not found" height="90px" width="6px">
+    </div>
+    <div class="d2">
+        <h1>Latest <span class="change_title">News</span></h1>
+    </div>
+    </div>
 
 
 
@@ -163,39 +152,84 @@
 
 
 
-        <br>
-        <br>
-        <br>
+    <br>
+    <br>
+    <br>
 
 
 
 
-        <center>
-            <div class="cntainer">
-                <div class="new1">
-                    <img class="image" src="img/n2.png" alt="not found" width="500px" height="700px" />
 
-                </div>
-                <div class="new2">
-                    <img src="img/new10.png" alt="not found" width="600px" height="350px">
-                </div>
-                <div class="new3">
-                    <img src="img/new11.png" alt="not found" width="600px" height="350px">
-                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="cards">
+        <div class="card">
+            <img src="img/new2.png" alt="Avatar" style="width:100%">
+            <div class="container">
+                <p class="iden1"><b>The sixth season of the Geniuses program, the match between Misr Technological University and Tanta University</b></p>
             </div>
-
-            <a href="News.html"><img class="seemore" src="img/Picture8.svg" alt="not found" width="250px" height="90px" /></a>
-            <br>
-            <br>
-        </center>
+        </div>
 
 
 
 
+        <div class="card">
+            <img src="img/new.png" alt="Avatar" style="width:100%">
+            <div class="container">
+                <p class="iden1"><b>Professor Dr. Ahmad Hosni Al-Haywy and his talk about the Technologists Syndicate Law</b></p>
+            </div>
+        </div>
 
+
+
+
+        <div class="card">
+            <img src="img/new2.png" alt="Avatar" style="width:100%">
+            <div class="container">
+                <p class="iden1"><b>The sixth season of the Geniuses program, the match between Misr Technological University and Tanta University</b></p>
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <img src="img/new2.png" alt="Avatar" style="width:100%">
+            <div class="container">
+                <p class="iden1"><b>The sixth season of the Geniuses program, the match between Misr Technological University and Tanta University</b></p>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="card">
+            <img src="img/new.png" alt="Avatar" style="width:100%">
+            <div class="container">
+                <p class="iden1"><b>Professor Dr. Ahmad Hosni Al-Haywy and his talk about the Technologists Syndicate Law</b></p>
+            </div>
+        </div>
 
 
     </div>
+
+    <br>
+    <br>
+    <BR>
 
 
 
@@ -204,12 +238,12 @@
 
     <div class="linne">
     </div>
-    <div class="header">
+    <div class="header2">
         <h1>
             International Partnerships
         </h1>
 
-        <div class="container">
+        <div class="container2">
             <img src="img/image1-removebg-preview.png" style="width:14.5%;  height: 14.5%;">
             <img src="img/image22-removebg-preview.png" style="width:13.5%;  height: 13.5%;">
             <img src="img/image9-removebg-preview.png" style="width:13%;  height: 13%;">
@@ -266,5 +300,15 @@
         </div>
         </footer> -->
 </body>
+<script>
+    const headerEl = document.querySelector('.header');
+    document.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            headerEl.classList.add('header-scrolled');
+        } else {
+            headerEl.classList.remove('header-scrolled');
+        }
+    });
+</script>
 
 </html>
