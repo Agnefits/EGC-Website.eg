@@ -4,79 +4,53 @@ body {
     padding: 0;
 }
 
-
-/* .block {
-    margin-left: 40px;
-    margin-top: -300px;
-} */
-
-.dep {
-    padding-top: 200px;
+.departments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
 .dep_t {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* font-size: 40px; */
+    /* font-size: 64px; */
     font-weight: 500;
     color: #102749;
+    /* margin-bottom: 20px;
+  margin-left:40px; */
+}
+
+.department-row {
     display: flex;
-    text-align: start;
-    /* margin-bottom: 8vh;
-    padding-top: 100px; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-
-/* .dep_t::before {
-    content: "";
+.department {
     position: relative;
-    display: inline-block;
-    height: 80px;
-    width: 6px;
-    right: 20px;
-    top: 70px;
-    background-color: rgb(42, 165, 232);
-} */
-
-.r {
-    margin-left: 50px;
-    margin-top: 40px;
-    border-radius: 35px;
-    box-shadow: 10px 10px 5px rgb(177, 185, 187);
-    width: 400px;
-    height: 265px;
+    text-align: center;
 }
 
-.a {
-    width: 400px;
-    margin-left: 50px;
-    margin-top: 40px;
+.department-image {
+    width: 30vw;
+    height: 17vw;
     border-radius: 35px;
-    box-shadow: 10px 10px 5px rgb(177, 185, 187);
-    height: 265px;
-}
-
-.contner {
-    position: relative;
-    display: flex;
-    height: 100%;
-    align-items: center;
-    /* margin-left: 10px; */
+    box-shadow: 10px 10px 5px rgba(177, 185, 187);
+    transition: transform 0.3s ease;
 }
 
 .overlay {
-    display: none;
+    display: block;
     position: absolute;
-    bottom: 0;
-    left: 50px;
+    top: 0;
+    left: 0;
     right: 0;
+    bottom: 0;
     background-color: rgba(6, 44, 87, 0.5);
     overflow: hidden;
     transition: 0.5s ease;
     border-radius: 35px;
-    display: block;
-    width: 400px;
-    height: 269px;
-    /* ارتفاع الفقرة */
 }
 
 .tex {
@@ -89,14 +63,29 @@ body {
     text-align: center;
 }
 
-.contain {
-    margin-left: 450px;
-    margin-top: -509px;
-    position: relative;
-}
 
-.containe {
-    margin-left: 900px;
-    margin-top: -509px;
+/* .dep_t::before {
+    content: "";
     position: relative;
+    display: inline-block;
+    height: 80px;
+    width: 6px;
+    top: 15px;
+    right: 10px;
+    background-color: rgb(42, 165, 232);
+} */
+
+@media only screen and (max-width: 804px) {
+    .department-row {
+        flex-direction: column;
+        width: 70vw;
+    }
+    .department-image {
+        width: 70vw;
+        height: 265px;
+        /* Adjust image dimensions as needed */
+        border-radius: 35px;
+        box-shadow: 10px 10px 5px rgba(177, 185, 187);
+        transition: transform 0.3s ease;
+    }
 }
