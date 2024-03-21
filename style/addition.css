@@ -1,4 +1,4 @@
-.nav-background {
+/*.nav-background {
     height: 120px;
     width: 100vw;
     background-color: #0F2C4E;
@@ -14,4 +14,24 @@
 
 .nav-bar {
     z-index: 10;
+}*/
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-content>section {
+    margin: 50px 0;
+}
+
+.section-header {
+    padding: 10px 0 10px 30px;
+    margin: 0 0 20px 60px;
+    border-left: 5px solid rgb(42, 165, 232);
+    font-size: 3rem;
+}
+
+body {
+    width: 100vw;
 }

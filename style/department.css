@@ -4,28 +4,38 @@ body {
     padding: 0;
 }
 
+
+/* .block {
+    margin-left: 40px;
+    margin-top: -300px;
+} */
+
 .dep {
     padding-top: 200px;
 }
 
-h1 {
-    color: #102749;
+.dep_t {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-top: 100px;
-    padding-left: 25px;
-    font-size: 50px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #102749;
+    display: flex;
+    text-align: start;
+    /* margin-bottom: 8vh;
+    padding-top: 100px; */
 }
 
-.dep h1::before {
+
+/* .dep_t::before {
     content: "";
     position: relative;
     display: inline-block;
-    height: 55px;
+    height: 80px;
     width: 6px;
     right: 20px;
-    top: 10px;
+    top: 70px;
     background-color: rgb(42, 165, 232);
-}
+} */
 
 .r {
     margin-left: 50px;
@@ -47,6 +57,10 @@ h1 {
 
 .contner {
     position: relative;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    /* margin-left: 10px; */
 }
 
 .overlay {
@@ -67,7 +81,7 @@ h1 {
 
 .tex {
     color: white;
-    font-size: 35px;
+    font-size: 2rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -86,11 +100,3 @@ h1 {
     margin-top: -509px;
     position: relative;
 }
-
-.block {
-    margin-left: 40px;
-    margin-top: -300px;
-}
-
-
-/* .linee{width: 6px;height: 50px;background: rgb(42,165,232);position: absolute;margin-left: 10px;margin-top: -80px;} */
