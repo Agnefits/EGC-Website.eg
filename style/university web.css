@@ -34,7 +34,7 @@
 }
 
 .header .photo {
-    height: 6rem;
+    height: 7vw;
     padding-top: 15px;
 }
 
@@ -54,7 +54,7 @@
 
 .header ul li a {
     /* columns: #fff; */
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     text-decoration: none;
     color: #fff;
     font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -81,7 +81,7 @@
 }
 
 .d2 {
-    font-size: 2rem;
+    font-size: 2vw;
     font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -90,7 +90,7 @@
 }
 
 .cards {
-    --spacer: 2rem;
+    --spacer: 2vw;
     display: grid;
     gap: var(--spacer);
     grid-auto-flow: column;

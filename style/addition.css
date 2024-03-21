@@ -22,14 +22,14 @@
 }
 
 .page-content>section {
-    margin: 50px 0;
+    margin: 5vw 0;
 }
 
 .section-header {
-    padding: 10px 0 10px 30px;
-    margin: 0 0 20px 60px;
-    border-left: 5px solid rgb(42, 165, 232);
-    font-size: 3rem;
+    padding: 1vw 0 1vw 3vw;
+    margin: 0 0 1vw 4vw;
+    border-left: 0.5vw solid rgb(42, 165, 232);
+    font-size: 3vw;
 }
 
 body {

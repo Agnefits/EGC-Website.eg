@@ -16,7 +16,7 @@ body {
 
 .dep_t {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 40px;
+    /* font-size: 40px; */
     font-weight: 500;
     color: #102749;
     display: flex;
@@ -81,7 +81,7 @@ body {
 
 .tex {
     color: white;
-    font-size: 2rem;
+    font-size: 2vw;
     position: absolute;
     top: 50%;
     left: 50%;

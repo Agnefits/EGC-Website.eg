@@ -4,8 +4,11 @@
     }
     
     footer {
+        bottom: 0;
+        right: 0;
+        left: 0;
         font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-        font-size: 1em;
+        font-size: 1vw;
         width: 100%;
         background-image: linear-gradient(rgba(6, 44, 87, 0.5), rgba(6, 44, 87, 0.8)), url("../img/footer_background.jpg");
         background-size: cover, 100% 100%;
@@ -32,7 +35,7 @@
         position: relative;
         float: right;
         margin-right: 120px;
-        margin-top: -220px;
+        margin-top: -170px;
         margin-bottom: 10px;
     }
     
@@ -45,12 +48,12 @@
     .About p {
         margin-left: 45px;
         margin-top: -30px;
-        font-size: 1.2em;
+        font-size: 1.2vw;
         font-weight: bold;
     }
     
     .paragraph {
-        font-size: 1.3em;
+        font-size: 1.3vw;
         font-weight: bold;
         margin-left: 140px;
         margin-top: 30px;
