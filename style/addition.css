@@ -35,3 +35,15 @@
 body {
     width: 100vw;
 }
+
+.text,
+.dean_text {
+    text-align: justify;
+}
+
+.college-name {
+    font-size: 1.5vw;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

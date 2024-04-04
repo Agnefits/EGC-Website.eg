@@ -34,8 +34,8 @@
 }
 
 .header .photo {
-    height: 7vw;
-    padding-top: 15px;
+    height: 5vw;
+    /* padding-top: 15px; */
 }
 
 .header a:hover {
