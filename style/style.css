@@ -90,8 +90,6 @@ footer {
     /* height: 9vh; */
 }
 
-
-/*
 @media only screen and (max-width: 550px) {
     footer {
         grid-template-columns: 1fr;
@@ -146,4 +144,4 @@ footer {
         width: 7vw;
         height: 10vh;
     }
-}*/
+}
