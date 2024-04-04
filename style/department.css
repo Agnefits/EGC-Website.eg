@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 2vw;
 }
 
 .dep_t {
@@ -24,7 +24,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
+    gap: 4vw;
 }
 
 .department {
@@ -33,9 +33,9 @@ body {
 }
 
 .department-image {
-    width: 30vw;
+    width: 26vw;
     height: 17vw;
-    border-radius: 35px;
+    border-radius: 3vw;
     box-shadow: 10px 10px 5px rgba(177, 185, 187);
     transition: transform 0.3s ease;
 }
@@ -50,7 +50,7 @@ body {
     background-color: rgba(6, 44, 87, 0.5);
     overflow: hidden;
     transition: 0.5s ease;
-    border-radius: 35px;
+    border-radius: 3vw;
 }
 
 .tex {
@@ -75,6 +75,8 @@ body {
     background-color: rgb(42, 165, 232);
 } */
 
+
+/*
 @media only screen and (max-width: 804px) {
     .department-row {
         flex-direction: column;
@@ -83,9 +85,9 @@ body {
     .department-image {
         width: 70vw;
         height: 265px;
-        /* Adjust image dimensions as needed */
+        Adjust image dimensions as needed 
         border-radius: 35px;
         box-shadow: 10px 10px 5px rgba(177, 185, 187);
         transition: transform 0.3s ease;
     }
-}
+}*/
