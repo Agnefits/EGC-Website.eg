@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="style/university web.css">
     <link rel="stylesheet" href="style/dean.css">
     <link rel="stylesheet" href="style/addition.css">
+    <link rel="stylesheet" href="style/slide-nav-style.css">
 
 
 
@@ -51,10 +52,16 @@
                 <li><a href="#">News</a></li>
                 <li><a href="#">Events</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="page/login.html">Login</a></li>
+                <li id="loginTab"><a href="page/login.html">Login</a></li>
+                <li id="dashboardTab"><a href="javascript:void(0)" onclick="openNav()">Dashboard</a></li>
             </ul>
         </div>
     </header>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <!-- Close button -->
+    </div>
 
     <section class="page-content">
         <!-- Welcome section -->
@@ -280,6 +287,45 @@
             headerEl.classList.remove('header-scrolled');
         }
     });
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const privilage = urlParams.get('privilage');
+
+    const sideNav = document.getElementById("mySidenav");
+
+    if (privilage === 'Admin') {
+        document.getElementById("loginTab").remove();
+
+        sideNav.innerHTML +=
+            '<a href = "#"> Add Doctor </a>' +
+            '<a href = "#"> Add Teaching Assistant </a>' +
+            '<a href = "#"> Add Student </a>' +
+            '<a href = "#"> Add Student Detection </a>';
+    } else if (privilage === 'Staff') {
+        document.getElementById("loginTab").remove();
+
+        sideNav.innerHTML +=
+            '<a href = "#"> Dashboard </a>' +
+            '<a href = "#"> Course </a>' +
+            '<a href = "#"> Join Student </a>' +
+            '<a href = "#"> Material </a>' +
+            '<a href = "#"> Assignment </a>' +
+            '<a href = "#"> Add Degree of Assignment </a>' +
+            '<a href = "#"> Add Quiz </a>' +
+            '<a href = "#"> Add Degree Quiz </a>';
+    } else {
+        document.getElementById("dashboardTab").remove();
+    }
+
+    // Function to open the side navigation
+    function openNav() {
+        sideNav.style.width = "25vw";
+    }
+
+    // Function to close the side navigation
+    function closeNav() {
+        sideNav.style.width = "0";
+    }
 </script>
 
 </html>
