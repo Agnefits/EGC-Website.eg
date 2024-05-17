@@ -1,81 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Quiz</title>
     <link rel="stylesheet" href="../style/add quiz.css">
 </head>
+
 <body>
     <main>
         <section class="add-quiz">
             <h2>Add Quiz</h2>
-    <div id="contanier">
-        <div id="quiz-container">
-            <div class="quiz-container" id="quiz-1">
-                <div id="type_q">
-                <label >Question Type</label>
-                <select class="type_of_Quisetion" class="t_quiz" id="type_of_Quisetion" required>
+            <div id="contanier">
+                <div id="quiz-container">
+                    <div class="quiz-container" id="quiz-1">
+                        <div id="type_q">
+                            <label>Question Type</label>
+                            <select class="type_of_Quisetion" class="t_quiz" id="type_of_Quisetion" required>
                     <option value="">Please select</option>
                     <option value="Multiply">Multiple Choice</option>
                     <option value="tf">True or False</option>
                     <option value="short">Short Answer</option>
                 </select>
-                </div>
-                <div id="q_text">
-                    <label id="l">Quisetion</label><br>
-                    <textarea id="text" placeholder="Enter your quisetion here" required></textarea>
-                </div>
-                <div id="t_f" class="t_f" style="display: none;">
-                    <div id="corectAnswer">
+                        </div>
+                        <div id="q_text">
+                            <label id="l">Quisetion</label><br>
+                            <textarea id="text" placeholder="Enter your quisetion here" required></textarea>
+                        </div>
+                        <div id="t_f" class="t_f" style="display: none;">
+                            <div id="corectAnswer">
 
-                        <label> Correct Answer : </label>
-                        <input type="radio" id="radioButton1" name="myRadio" value="option1">
-                        <label for="radioButton1">True</label>
-                        
-                        <input type="radio" id="radioButton2" name="myRadio" value="option2">
-                        <label for="radioButton2">False</label>
-                    </div>
-                </div>
-                <div id="m_c" class="m_c" style="display: none;">
-                    <div>
-                        <label id="answer">ِAnswer A</label>
-                        <input  type="text"  class="Choice" placeholder="Enter Answer A" required>
-                    </div>
-                    <div id="answer">
-                        <label>ِAnswer B</label>
-                        <input type="text"  class="Choice" placeholder="Enter Answer B" required>
-                    </div>
-                    <div id="answer">
-                        <label>ِAnswer C</label>
-                        <input type="text"  class="Choice" placeholder="Enter Answer C" required>
-                    </div>
-                    <div id="answer">
-                        <label>ِAnswer D</label>
-                        <input type="text"  class="Choice" placeholder="Enter Answer D" required>
-                    </div>
-                    <div id="corectAnswer">
-                        <label>Correct Answer</label>
-                            <select id="type_ofQuisetion"  required>
+                                <label> Correct Answer : </label>
+                                <input type="radio" id="radioButton1" name="myRadio" value="option1">
+                                <label for="radioButton1">True</label>
+
+                                <input type="radio" id="radioButton2" name="myRadio" value="option2">
+                                <label for="radioButton2">False</label>
+                                <br>
+                                <br>
+                                <label>Degree</label>
+                                <input type="number" class="degree" placeholder=" Enter Degree" required>
+                            </div>
+                        </div>
+                        <div id="m_c" class="m_c" style="display: none;">
+                            <div>
+                                <label id="answer">ِAnswer A</label>
+                                <input type="text" class="Choice" placeholder="Enter Answer A" required>
+                            </div>
+                            <div id="answer">
+                                <label>ِAnswer B</label>
+                                <input type="text" class="Choice" placeholder="Enter Answer B" required>
+                            </div>
+                            <div id="answer">
+                                <label>ِAnswer C</label>
+                                <input type="text" class="Choice" placeholder="Enter Answer C" required>
+                            </div>
+                            <div id="answer">
+                                <label>ِAnswer D</label>
+                                <input type="text" class="Choice" placeholder="Enter Answer D" required>
+                            </div>
+                            <div id="corectAnswer">
+                                <label>Correct Answer</label>
+                                <select id="type_ofQuisetion" required>
                                 <option>Check Answer </option>
                                 <option>ِA</option>
                                 <option>B</option>
                                 <option>C</option>
                                 <option>D</option>
                             </select>
-                    </div>
-                </div>
-                <div id="shortAnswer" class="shortAnswer" style="display: none;">
-                    <label> Correct Answer</label>
-                    <input type="text" class="c_a" placeholder="Correct Answer" required>
-                </div>
-                <button class="remove-quiz" style="display: none;">
+                                <br>
+                                <br>
+                                <div>
+                                    <label>Degree</label>
+                                    <input type="number" class="degree" placeholder=" Enter Degree" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="shortAnswer" class="shortAnswer" style="display: none;">
+                            <label> Correct Answer</label>
+                            <input type="text" class="c_a" placeholder="Correct Answer" required>
+                            <br>
+                            <br>
+                            <div>
+                                <label>Degree</label>
+                                <input type="number" class="degree" placeholder=" Enter Degree" required>
+                            </div>
+                        </div>
+                        <!-- <div>
+                    <label>Degree</label>
+                    <input type="number" class="degree" placeholder=" Enter Degree" required>
+                </div> -->
+                        <button class="remove-quiz" style="display: none;">
                     <h5>Remove Question</h5>
                 </button>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-            
+
             <button id="add-quiz">
                 <h5>Add Quisetion</h5>
             </button>
@@ -83,10 +105,11 @@
                 <h5>Upload Quiz</h5>
             </button>
         </section>
-        </main>
-   
+    </main>
+
 
 
     <script src="../script/add quiz.js"></script>
 </body>
+
 </html>

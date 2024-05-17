@@ -61,6 +61,10 @@ label ,input,textarea,select{
     width: 100%;
     height: 30px;
 }
+.degree {
+    width: 100%;
+    height: 30px;
+}
 
 .c_a {
     width: 100%;
