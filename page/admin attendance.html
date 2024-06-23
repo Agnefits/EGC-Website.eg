@@ -1,0 +1,51 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance Portal</title>
+    <link rel="stylesheet" href="../style/admin attendance.css">
+
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <div id="formSection">
+
+            <h1>Attendance</h1>
+            <label for="department">Department:</label>
+            <select id="department" name="department">
+              <option value="mechanics">Mechanics</option>
+              <option value="electronics">Electronics</option>
+              <option value="computers">Computers</option>
+            </select>
+
+            <label for="class">Class:</label>
+            <select id="class" name="class">
+              <!-- The classes will be dynamically generated based on the selected department -->
+            </select>
+
+            <ul id="students-list">
+                <!-- The students will be dynamically generated based on the selected class and department -->
+            </ul>
+
+
+            <p id="Summaryatt"></p>
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <script src="../script/admin attendance.js"></script>
+</body>
+
+</html>

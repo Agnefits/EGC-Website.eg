@@ -25,7 +25,7 @@ body {
     box-shadow: -5px 5px 10px gray;
     margin-right: 20px;
 }
-.student_name, .department-year-format{
+.student_name, .department-year-format, .list-format{
     display: flex;
     justify-content: space-between;
 }
@@ -35,11 +35,11 @@ body {
 .lastname{
     width: 50%;
 }
-.Dep-Year{
+.Dep-Year, .list{
     width: 47%;
 }
 #profileUploadPic, #nationalId, #username, #email, #phone_no ,
-#password, #department, #yearlevel, #lastname, #firstname {
+#password, #department, #yearlevel, #lastname, #firstname, #No_list, #No_section {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -81,4 +81,15 @@ label{
 #message p {
     padding: 10px 35px;
     font-size: 18px;
+}
+.image_label{
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: rgb(42, 165, 232);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.image-input{
+    display: none;
 }

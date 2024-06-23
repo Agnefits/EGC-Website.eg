@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/nav.css">
+</head>
+
+<body>
+    <div class="nav">
+        <ul class="ul">
+            <li><a href="#home" class="a">Students</a></li>
+            <li><a href="../page/staff.html" class="a">Staff</a></li>
+            <li><a href="../page/coursework.html" class="a">CourseWork</a></li>
+            <li><a href="../page/nav.html" class="a">Home</a></li>
+            <li class="name_c a">Course One</li>
+        </ul>
+        <div class="log"><img src="../img/course_img.png"></div>
+    </div>
+
+    <div class="container">
+        <form id="message-form">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="5"></textarea>
+
+            <label for="file">File Attachment:</label>
+            <input type="file" id="fileInput" multiple>
+            <p id="fileHints" style="color: grey; font-size: small;"></p>
+
+            <button type="submit" class="button">Post Message</button>
+        </form>
+        <div id="messages-container"></div>
+    </div>
+
+    <script src="../script/nav.js"></script>
+</body>
+
+</html>

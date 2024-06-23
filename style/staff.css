@@ -1,0 +1,136 @@
+body {
+    background: #f0f1f6;
+    font-family: sans-serif;
+}
+.ul {
+    list-style-type: none;
+    overflow:hidden;
+    /* background-color:#0F2C4E; */
+    /* font-family: sans-serif; */
+    /* margin-top:60px; */
+  
+    margin-left:-10px;
+    margin-right:10px;
+   z-index: 100;
+    position:fixed;
+    width:100%;
+   
+  }
+  
+  .ul li {
+    float:right;
+    padding-right: 70px;
+  
+  }
+  /* h1{color:#0F2C4E;margin-top: 100px;} */
+  .ul li .a {
+    display:block;
+    color:#0F2C4E;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration:none;
+  }
+  .name_c{ padding: 10px;margin-right: 180px; color:#0F2C4E;font-size: 25px;font-weight: bold;}
+  .ul li .a:hover {
+    /* box-shadow:1px 1px 20px; */
+      border-bottom: 5px rgb(150, 146, 146) solid;
+    } 
+
+
+.join .a{background:#0F2C4E ;text-decoration: none;}
+
+
+/* .nav{position: fixed;} */
+ 
+ul{list-style-type: none;}
+a{
+  text-decoration:none;color:#0F2C4E;
+  font-size: 20px;
+  padding: 20px;
+  font-weight: bold;
+}
+
+
+.log img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: -5px 5px 10px gray;
+  margin-right: 40px;
+  position: fixed;
+  
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.staff {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 200px;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+.column {
+    flex-basis: calc(31% - 20px); /* تحديد عرض العمود بناءً على حجم الشاشة */
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 3%;
+    padding-left: 0px;
+    padding-right: 0px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    position: relative;
+}
+.column:hover {
+    box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.5);
+    background: #102749;
+    color: #fff;
+}
+.im {
+    border-radius: 8px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.5s;
+    display: flex;
+    width: 100%;
+    height: 200px;
+}
+.img {
+    width: 40px;
+    height: 30px;
+}
+.icon {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.column:hover .icon {
+    opacity: 1;
+}
+h3 {
+    font-weight: 600;
+    margin-top: 30px;
+}
+   

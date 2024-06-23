@@ -300,19 +300,19 @@
             '<a href = "page/add-doctor.html"> Add Doctor </a>' +
             '<a href = "page/add-teaching-assistants.html"> Add Teaching Assistant </a>' +
             '<a href = "page/Add_Student.html"> Add Student </a>' +
-            '<a href = "page/add student att.html"> Add Student Detection </a>';
+            '<a href = "page/admin attendance.html"> Show Student Attendance </a>';
     } else if (privilage === 'Staff') {
         document.getElementById("loginTab").remove();
 
         sideNav.innerHTML +=
             '<a href = "page/Dashboard.html"> Dashboard </a>' +
             '<a href = "page/course.html"> Course </a>' +
-            '<a href = "page/join.htm"> Join Student </a>' +
+            '<a href = "page/add course.html"> Add Course </a>' +
             '<a href = "page/Upload.html"> Material </a>' +
-            '<a href = "#"> Assignment </a>' +
+            '<a href = "page/assignment.html"> Assignment </a>' +
             '<a href = "page/Degree Assignments.html"> Add Degree of Assignment </a>' +
             '<a href = "page/add quiz.html"> Add Quiz </a>' +
-            '<a href = "#"> Add Degree Quiz </a>';
+            '<a href = "page/d&e attendance.html"> Mark Student Attendance </a>';
     } else {
         document.getElementById("dashboardTab").remove();
     }

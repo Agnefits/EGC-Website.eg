@@ -44,3 +44,15 @@ input[type=text]:focus{
     background-color: #ddd;
     outline: none;
   }
+  .card{
+    background-color: white;
+    width: 80vw;
+    border: 3PX solid #c6cbd1;
+    margin-bottom: 10px;
+   
+}
+.card-course{
+    width: 150px;
+    border: 3PX solid #c6cbd1;
+    margin-bottom: 10px;
+}
