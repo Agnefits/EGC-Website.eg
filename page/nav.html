@@ -23,7 +23,7 @@
     <div class="container">
         <form id="message-form">
             <label for="description">Description:</label>
-            <textarea id="description" name="description" rows="5"></textarea>
+            <textarea id="description" name="description" rows="5" required></textarea>
 
             <label for="file">File Attachment:</label>
             <input type="file" id="fileInput" multiple>
@@ -31,10 +31,12 @@
 
             <button type="submit" class="button">Post Message</button>
         </form>
-        <div id="messages-container"></div>
+        <div id="messages-container">
+            <!-- <div class="menu-icon">&#x2022;&#x2022;&#x2022;</div> -->
+        </div>
     </div>
 
-    <script src="../script/nav.js"></script>
+    <script src="../script/script.js"></script>
 </body>
 
 </html>

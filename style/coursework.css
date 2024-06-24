@@ -28,6 +28,9 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     z-index: 1;
+    font-weight: bold;
+    font-size: 20px;
+
 }
 
 .show2 {
@@ -67,11 +70,13 @@ body {
     justify-content: center;
 }
 
-.icon-button img {
+/* .icon-button img {
     width: 30px;
     height: 30px;
-}
+} */
 
+.icon{ width: 40px;
+    height: 40px;background: #0F2C4E;border-radius: 50%;}
 
 
 

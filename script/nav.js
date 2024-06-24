@@ -2,12 +2,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const messageForm = document.getElementById('message-form');
     const messageContainer = document.getElementById('messages-container');
     let editingMessage = null;
+    let previousFileName = null;
 
     messageForm.addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent default form submission
 
         const description = document.getElementById('description').value;
-        const files = document.getElementById('fileInput').files; // Get uploaded files
+        const fileInput = document.getElementById('fileInput');
+        const files = fileInput.files; // Get uploaded files
 
         if (editingMessage) {
             // Update existing message
@@ -23,13 +25,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 editingMessage.appendChild(newFileContainer);
             }
 
-            // Add new file attachments
+            // Add new file attachments or keep the previous one
             if (files.length > 0) {
+                previousFileName = files[0].name;
                 const fileList = document.createElement('ul'); // Use an unordered list for file links
                 for (const file of files) {
                     const listItem = document.createElement('li');
                     listItem.classList.add('file-item'); // Add a CSS class for styling (optional)
-
+                
                     const img_file = document.createElement('img');
                     img_file.src = '../image/image_f.png'; // **Keep this for the initial placeholder image**
                     img_file.classList.add('img_file');
@@ -37,10 +40,19 @@ document.addEventListener('DOMContentLoaded', function() {
                     fileLink.href = URL.createObjectURL(file); // Generate temporary URL for the file
                     fileLink.textContent = file.name;
                     fileLink.target = '_blank'; // Open files in a new tab
-
+                
                     listItem.appendChild(fileLink);
                     fileList.appendChild(listItem);
                 }
+                editingMessage.querySelector('.file-container').appendChild(fileList);
+            } else {
+                // Show previous file name if no new file is selected
+                const fileList = document.createElement('ul');
+                const listItem = document.createElement('li');
+                listItem.classList.add('file-item');
+                // Add the link to contain the previous file name instead of an empty link
+                listItem.innerHTML = `<a href="${previousFileName}" target="_blank">${previousFileName}</a>`;
+                fileList.appendChild(listItem);
                 editingMessage.querySelector('.file-container').appendChild(fileList);
             }
 
@@ -60,11 +72,12 @@ document.addEventListener('DOMContentLoaded', function() {
             newMessage.appendChild(li);
             const im = document.createElement('img');
             im.classList.add('im');
-            im.src = '../image/bullets.png';
+            im.src = '../image/bullets.png'; 
             li.appendChild(im);
 
             // Handle file attachments (if any)
             if (files.length > 0) {
+                previousFileName = files[0].name;
                 const fileContainer = document.createElement('div'); // Create a separate container for files
                 fileContainer.classList.add('file-container'); // Add a CSS class for styling (optional)
 
@@ -72,15 +85,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 for (const file of files) {
                     const listItem = document.createElement('li');
                     listItem.classList.add('file-item'); // Add a CSS class for styling (optional)
-
+                
                     const img_file = document.createElement('img');
                     img_file.src = '../image/image_f.png'; // **Keep this for the initial placeholder image**
                     img_file.classList.add('img_file');
                     const fileLink = document.createElement('a');
                     fileLink.href = URL.createObjectURL(file); // Generate temporary URL for the file
                     fileLink.textContent = file.name;
+                    fileLink.classList.add('link')
                     fileLink.target = '_blank'; // Open files in a new tab
-
+                
                     listItem.appendChild(fileLink);
                     newMessage.appendChild(img_file);
                     fileList.appendChild(listItem);
@@ -93,9 +107,9 @@ document.addEventListener('DOMContentLoaded', function() {
             const dropdownContent2 = document.createElement('div');
             dropdownContent2.classList.add('dropdown-content2');
             dropdownContent2.innerHTML = `
-              <a href="#" class="edit">Edit</a>
-              <a href="#" class="delete">Delete</a>
-          `;
+                <a href="#" class="edit">Edit</a>
+                <a href="#" class="delete">Delete</a>
+            `;
             newMessage.appendChild(dropdownContent2);
 
             // Append the constructed message element to the container
@@ -125,13 +139,17 @@ document.addEventListener('DOMContentLoaded', function() {
             editLink.addEventListener('click', function(event) {
                 event.preventDefault();
                 document.getElementById('description').value = description;
-
+                document.getElementById('fileInput').value = '';
                 // Display file names as hints
                 const fileNames = Array.from(newMessage.querySelectorAll('.file-item a')).map(a => a.textContent);
                 document.getElementById('fileInput').setAttribute('data-file-names', fileNames.join(', '));
                 document.getElementById('fileHints').textContent = `Files: ${fileNames.join(', ')}`;
 
                 editingMessage = newMessage;
+                editingMessage.classList.add('link');
+                previousFileName = fileNames[0];
+                // fileNames[0].classList.add('link');
+                // previousFileName.classList.add('link');
             });
         }
 
