@@ -3,6 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="name" content="Egyptian German College in Assiut | MITU">
+    <meta name="icon" content="img/logo.png">
+    <meta name="description" content="An Egyptian public college affiliated with Misr International Technological University was established according to the decision of the Minister of Higher Education No. 5701 dated 28/9/2021. It accepts students of both sexes who have a high school diploma
+    and technical diplomas according to the coordination of public universities.">
+    <meta name="keywords" content="MITU, EGC, EGC in Assiut, Egyptian German College, الكلية التكنولوجية في أسيوط, الكلية المصرية الألمانية للتكنولوجيا, ITEC Assiut, الكلية الألمانية, التكنولوجيا">
+    <meta name="author" content="ITEC Assiut Students">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EGC Website</title>
     <link rel="icon" href="img/logo.png" sizes="48x32">
@@ -46,14 +52,15 @@
             <p class="college-name">Egyptian Germany College</p>
             <ul>
                 <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Staff</a></li>
-                <li><a href="#">Students</a></li>
-                <li><a href="#">Departments</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#welcome-section">Staff</a></li>
+                <li><a href="#welcome-section">Students</a></li>
+                <li><a href="#department-section">Departments</a></li>
+                <li><a href="#news-section">News</a></li>
+                <li><a href="#news-section">Events</a></li>
+                <li><a href="#about-section">About</a></li>
                 <li id="loginTab"><a href="page/login.html">Login</a></li>
                 <li id="dashboardTab"><a href="javascript:void(0)" onclick="openNav()">Dashboard</a></li>
+                <li><a href="page/StudentDashboard.html" id="studentDashboardTab">Dashboard</a></li>
             </ul>
         </div>
     </header>
@@ -68,7 +75,7 @@
         <!-- <div class="line"> -->
 
         <section class="contant">
-            <h2 class="section-header">
+            <h2 class="section-header" id="welcome-section">
                 Welcome to<br> Egyptian Germany College
             </h2>
             <div class="cardes">
@@ -92,7 +99,7 @@
 
         <section class="welcomme">
             <!-- <div class="line"></div> -->
-            <h2 class="section-header">About <span style="color:  rgb(42, 165, 232);">EGC</span> </h2>
+            <h2 class="section-header" id="about-section">About <span style="color:  rgb(42, 165, 232);">EGC</span> </h2>
             <div class="content">
                 <div class="text">
                     <p>
@@ -109,7 +116,7 @@
 
         <!-- Departement section -->
         <section class="departments-section">
-            <h2 class="dep_t section-header">Departments</h2>
+            <h2 class="dep_t section-header" id="department-section">Departments</h2>
             <div class="departments">
                 <div class="department-row">
                     <div class="department">
@@ -138,7 +145,7 @@
 
         <section class="dean">
             <!-- <div class="line"></div> -->
-            <h2 class="section-header"> Dean's <span style="color: rgb(42, 165, 232);">Speech</span></h2>
+            <h2 class="section-header" id="dean-section"> Dean's <span style="color: rgb(42, 165, 232);">Speech</span></h2>
             <div class="content">
                 <div class="dean_text">
                     <p>
@@ -162,7 +169,7 @@
     </div> -->
 
         <section class="d2">
-            <h2 class="section-header">Latest <span class="change_title">News</span></h2>
+            <h2 class="section-header" id="news-section">Latest <span class="change_title">News</span></h2>
 
             <div class="cards">
                 <div class="card">
@@ -221,7 +228,7 @@
     </div> -->
 
         <section class="header2">
-            <h2 class="section-header">
+            <h2 class="section-header" id="partnerships-section">
                 International Partnerships
             </h2>
 
@@ -243,7 +250,7 @@
     <footer>
         <div class="Head-Footer">
             <img src="img/logo.png" class="logo">
-            <h1> Egyptian Germany College</h1>
+            <h1 id="footer-section"> Egyptian Germany College</h1>
         </div>
         <p class="paragraph">It was established according <br>to the decisionof the Minister<br> of Higher Education No. 5701 <br>Dated 28-9-2021</p>
         <div class="social">
@@ -294,6 +301,7 @@
     const sideNav = document.getElementById("mySidenav");
 
     if (privilage === 'Admin') {
+        document.getElementById("studentDashboardTab").remove();
         document.getElementById("loginTab").remove();
 
         sideNav.innerHTML +=
@@ -302,6 +310,7 @@
             '<a href = "page/Add_Student.html"> Add Student </a>' +
             '<a href = "page/admin attendance.html"> Show Student Attendance </a>';
     } else if (privilage === 'Staff') {
+        document.getElementById("studentDashboardTab").remove();
         document.getElementById("loginTab").remove();
 
         sideNav.innerHTML +=
@@ -309,8 +318,14 @@
             '<a href = "page/course.html"> Course </a>' +
             '<a href = "page/add course.html"> Add Course </a>' +
             '<a href = "page/d&e attendance.html"> Mark Student Attendance </a>';
+    } else if (privilage === 'Student') {
+        document.getElementById("loginTab").remove();
+        document.getElementById("dashboardTab").remove();
+
     } else {
         document.getElementById("dashboardTab").remove();
+        document.getElementById("studentDashboardTab").remove();
+
     }
 
     // Function to open the side navigation

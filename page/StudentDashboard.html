@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="icon" href="../img/logo.png" sizes="48x32">
+    <link rel="stylesheet" href="../style/StudentDashboard.css">
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <img src="../img/logo.png" class="icon">
+            <div class="logo_name">Egyptian Germany College</div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+
+            <li>
+                <a href="StudentDashboard.html">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="student-announcements.html">
+                    <i class='bx bx-bell'></i>
+                    <span class="links_name">Announcements</span>
+                </a>
+                <span class="tooltip">Announcements</span>
+            </li>
+            <li>
+                <a href="subjects.html">
+                    <i class='bx bx-book-bookmark'></i>
+                    <span class="links_name">Subjects</span>
+                </a>
+                <span class="tooltip">Subjects</span>
+            </li>
+            <li>
+                <a href="all-assignments.html">
+                    <i class='bx bx-task'></i>
+                    <span class="links_name">Assignments</span>
+                </a>
+                <span class="tooltip">Assignments</span>
+            </li>
+            <li>
+                <a href="showStudentAllQuizzes.html">
+                    <i class='bx bx-file'></i>
+                    <span class="links_name">Quizzes</span>
+                </a>
+                <span class="tooltip">Quizzes</span>
+            </li>
+            <li>
+                <a href="student-all-grades.html">
+                    <i class='bx bx-line-chart'></i>
+                    <span class="links_name">Grades</span>
+                </a>
+                <span class="tooltip">Grades</span>
+            </li>
+            <li>
+                <a href="student-staff.html">
+                    <i class='bx bx-mail-send'></i>
+                    <span class="links_name">Contact Staff</span>
+                </a>
+                <span class="tooltip">Contact Staff</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="links_name">Setting</span>
+                </a>
+                <span class="tooltip">Setting</span>
+            </li>
+            <li class="profile">
+                <div class="profile-details">
+                    <img src="../img/person1.JPG" alt="profileImg">
+                    <div class="name_email">
+                        <div class="name">Mariam Magdy</div>
+                        <div class="email">mariammagdy@gmail.com</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="log_out"></i>
+            </li>
+        </ul>
+    </div>
+
+    <section class="home-section">
+        <div class="text">
+            <h3>Dashboard</h3>
+        </div>
+
+        <div class="content">
+            <div class="cards">
+                <div class="card">
+                    <div class="student-subjects">
+                        <img class="icon" src="../img/book.png">
+                        <h1>6</h1>
+                        <p>Subjects</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="student-task">
+                        <img class="icon" src="../img/task.png">
+                        <h1>12</h1>
+                        <p>Tasks</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="student-attendance">
+                        <img class="icon" src="../img/attendance.png">
+                        <h1>240</h1>
+                        <p>Attendance</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="student-absent">
+                        <img class="icon" src="../img/absence.png">
+                        <h1>06</h1>
+                        <p>Absence</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="student-late">
+                        <img class="icon" src="../img/late.png">
+                        <h1>8</h1>
+                        <p>Late</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="exam-scedule">
+                <div class="title">
+                    <h2>Exam Scedule</h2>
+                    <a href="#" class="btn" id="btnview">View All</a>
+                </div>
+                <table>
+                    <thead>
+                        <td>Doctor</td>
+                        <td>Subject</td>
+                        <td>Date</td>
+                        <td>Time</td>
+                    </thead>
+                    <tr>
+                        <td>Dr. Hesham</td>
+                        <td>Programming</td>
+                        <td>30/7/2024</td>
+                        <td>08:00 to 10:00</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. Hesham</td>
+                        <td>Programming</td>
+                        <td>30/7/2024</td>
+                        <td>08:00 to 10:00</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. Hesham</td>
+                        <td>Programming</td>
+                        <td>30/7/2024</td>
+                        <td>08:00 to 10:00</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. Hesham</td>
+                        <td>Programming</td>
+                        <td>30/7/2024</td>
+                        <td>08:00 to 10:00</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. Hesham</td>
+                        <td>Programming</td>
+                        <td>30/7/2024</td>
+                        <td>08:00 to 10:00</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. Hesham</td>
+                        <td>Programming</td>
+                        <td>30/7/2024</td>
+                        <td>08:00 to 10:00</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="chat">
+                <div class="title">
+                    <h2>Notifications</h2>
+                    <a href="#" class="btn">View All</a>
+                </div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img class="profile" src="../img/person1.JPG">
+                            </td>
+                            <td>Salma Hussein</td>
+                            <td>02:00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="profile" src="../img/person2.jpg">
+                            </td>
+                            <td>Mariam</td>
+                            <td>12:00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="profile" src="../img/person1.JPG">
+                            </td>
+                            <td>Rana Nasr</td>
+                            <td>08:00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="profile" src="../img/person2.jpg">
+                            </td>
+                            <td>Fedaa</td>
+                            <td>04:00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="profile" src="../img/person2.jpg">
+                            </td>
+                            <td>Salma Hussein</td>
+                            <td>02:00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="profile" src="../img/person1.JPG">
+                            </td>
+                            <td>Salma Hussein</td>
+                            <td>02:00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="profile" src="../img/person1.JPG">
+                            </td>
+                            <td>Salma Hussein</td>
+                            <td>02:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <script src="../script/StudentDashboard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 20px;
+    color: #0F2C4E;
+    background-color: #c5ddf9;
+}
+
+header {
+	background-color: #f0f0f0;
+	padding: 20px;
+	text-align: center;
+}
+
+h1 {
+	color: #00698f;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+#assignments-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.assignment {
+	background-color: #fff;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    width: 80vh;
+}
+
+.assignment h3 {
+	margin-top: 0;
+}
+
+.assignment p {
+	margin-bottom: 10px;
+}
+
+.assignment .assign {
+	background-color: #00698f;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 15px;
+	cursor: pointer;
+    text-decoration: none;
+}
+
+.assignment .assign:hover {
+	background-color: #0F2C4E;
+    text-decoration: none;
+}
+
+.assign-container
+{
+    margin-top: 20px;
+}
+
+footer {
+	background-color: #f0f0f0;
+	padding: 10px;
+	text-align: center;
+	clear: both;
+}

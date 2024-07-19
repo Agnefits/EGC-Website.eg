@@ -4,43 +4,38 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" 
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Attendance Portal</title>
+    <link rel="icon" href="../img/logo.png" sizes="48x32">
     <link rel="stylesheet" href="../style/add student att.css">
 
 </head>
 
 <body>
 
-  
+
 
     <div class="container">
         <div id="formSection">
             <h2>Mark Attendance</h2>
-            <button id="addStudentButton" 
-                onclick="showAddStudentForm()">
+            <button id="addStudentButton" onclick="showAddStudentForm()">
                 Add Student
             </button>
-            <button id="addClassButton" 
-                onclick="showAddClassForm()">
+            <button id="addClassButton" onclick="showAddClassForm()">
                 Add Class
             </button>
-            <button id="addDepartmentButton" 
-            onclick="showAddDepartmentForm()">
+            <button id="addDepartmentButton" onclick="showAddDepartmentForm()">
             Add Department
             </button>
 
 
             <label for="departmentSelector">Department:</label>
-            <select id="departmentSelector" required 
-                onchange="showStudentsList()">
+            <select id="departmentSelector" required onchange="showStudentsList()">
                 <!-- Populate classes dynamically -->
             </select>
 
             <label for="classSelector">Class:</label>
-            <select id="classSelector" required 
-                onchange="showStudentsList()">
+            <select id="classSelector" required onchange="showStudentsList()">
                 <!-- Populate classes dynamically -->
             </select>
             <ul id="studentsList">
@@ -51,19 +46,19 @@
             <div id="summarySection">
                 <h3>Summary</h3>
                 <p>
-                    Total Students: 
+                    Total Students:
                     <span id="totalStudents">0</span>
                 </p>
                 <p>
-                    Total Present: 
+                    Total Present:
                     <span id="totalPresent">0</span>
                 </p>
                 <p>
-                    Total Absent: 
+                    Total Absent:
                     <span id="totalAbsent">0</span>
                 </p>
                 <p>
-                    Total Leave: 
+                    Total Leave:
                     <span id="totalLeave">0</span>
                 </p>
             </div>
@@ -76,31 +71,31 @@
             <div id="resultSection" style="display: none;">
                 <h3>Attendance Result</h3>
                 <p>
-                    Date: 
+                    Date:
                     <span id="attendanceDate"></span>
                 </p>
                 <p>
-                    Time: 
+                    Time:
                     <span id="attendanceTime"></span>
                 </p>
                 <p>
-                    Class: 
+                    Class:
                     <span id="attendanceClass"></span>
                 </p>
                 <p>
-                    Total Students: 
+                    Total Students:
                     <span id="attendanceTotalStudents"></span>
                 </p>
                 <p>
-                    Present: 
+                    Present:
                     <span id="attendancePresent"></span>
                 </p>
                 <p>
-                    Absent: 
+                    Absent:
                     <span id="attendanceAbsent"></span>
                 </p>
                 <p>
-                    Leave: 
+                    Leave:
                     <span id="attendanceLeave"></span>
                 </p>
             </div>
@@ -162,7 +157,7 @@
             Cancel
         </button>
     </div>
-    
+
 
     <script src="../script/add stident att.js"></script>
 </body>
