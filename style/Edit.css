@@ -1,19 +1,20 @@
 body {
-    font-family: sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
-  }
-  
-  .Edit-Student{
+}
+
+.Edit-Student {
     background-color: hsl(0, 0%, 100%);
-    margin: 4% auto 5% auto; 
-    width: 45%; 
+    margin: 4% auto 5% auto;
+    width: 45%;
     box-shadow: 0 10px 10px rgba(5, 5, 5, 0.1);
     padding: 20px;
     border-radius: 15px;
-  }
-  .profile-picture img {
+}
+
+.profile-picture img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -22,15 +23,19 @@ body {
     margin-right: 20px;
     padding: 5px;
     margin-top: -90px;
-  }
-  h1{
+}
+
+h1 {
     padding-left: 130px;
-  }
-  hr {
+}
+
+hr {
     border: 1px solid #f1f1f1;
     margin-bottom: 25px;
-  }
-  input[type=text],input[type=password]{
+}
+
+input[type=text],
+input[type=password] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 20px 0;
@@ -39,49 +44,59 @@ body {
     background: #f1f1f1;
     box-sizing: border-box;
     border-radius: 5px;
-  }
-  input[type=text]:focus,input[type=password]:focus{
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
     background-color: #ddd;
     outline: none;
-  }
-.student_name, .department-year-format{
+}
+
+.student_name,
+.department-year-format {
     display: flex;
     justify-content: space-between;
 }
-.firstname{
+
+.firstname {
     width: 45%;
 }
-.lastname{
+
+.lastname {
     width: 50%;
 }
-#gender-radio{
+
+#gender-radio {
     padding-bottom: 10px;
- }
- .Dep-Year{
+}
+
+.Dep-Year {
     width: 47%;
 }
- #department, #yearlevel{
+
+#department,
+#yearlevel {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 10px;
     box-sizing: border-box;
- }
-  
-  button {
+}
+
+button {
     background-color: rgb(42, 165, 232);
     color: white;
-    padding: 10px ;
+    padding: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
     width: 100%;
-  
-  }
-  button:hover {
-    opacity:1;
+}
+
+button:hover {
+    opacity: 1;
     background-color: rgb(126, 180, 209);
-  }
+}

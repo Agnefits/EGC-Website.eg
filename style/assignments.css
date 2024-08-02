@@ -1,186 +1,178 @@
 body {
-	font-family: Arial, sans-serif;
-	margin: 20px;
-    color: #0F2C4E;
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 20px;
+    color: #0F2B4E;
     background-color: #c5ddf9;
 }
 
 header {
-	background-color: #f0f0f0;
-	padding: 40px;
-	text-align: center;
-    max-width: 100%; 
-  margin: 0 auto;
-  height: 10vh;
-  display: flex; 
-  align-items: center; 
-  justify-content: center
+    background-color: #f0f0f0;
+    padding: 40px;
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 
 h1 {
-	color: #00698f;
-  font-size: 4vh;
+    color: #0F2B4E;
+    font-size: 4vh;
 }
 
 main {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
 #assignments-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-  padding: 20px;
-  /* Add a max-width to prevent it from taking up too much space */
-  max-width: 100%;
-  margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    /* Add a max-width to prevent it from taking up too much space */
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .assignment {
-	background-color: #fff;
-	padding: 20px;
-	margin-bottom: 20px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     width: 100%;
 }
 
 .assignment h3 {
-	margin-top: 0;
+    margin-top: 0;
 }
 
 .assignment p {
-	margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .assignment .assign {
-	background-color: #00698f;
-	color: #fff;
-	padding: 10px 20px;
-	border: none;
-	border-radius: 15px;
-	cursor: pointer;
+    background-color: #00698f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
     text-decoration: none;
 }
 
 .assignment .assign:hover {
-	background-color: #0F2C4E;
+    background-color: #0F2B4E;
     text-decoration: none;
 }
 
-.assign-container
-{
+.assign-container {
     margin-top: 20px;
 }
 
 footer {
-	background-color: #f0f0f0;
-	padding: 10px;
-	clear: both;
-    max-width: 100%; 
+    background-color: #f0f0f0;
+    padding: 10px;
+    clear: both;
+    max-width: 100%;
     margin: 0 auto;
-    height:7vh;
-    display: flex; 
-    align-items: center; 
+    height: 7vh;
+    display: flex;
+    align-items: center;
     justify-content: center
 }
 
 
 /* Media queries for different screen sizes */
+
 @media only screen and (max-width: 1200px) {
-  h1 {
-    font-size: 3.5vh;
-  }
-
-  h2 {
-    font-size: 2.5vh;
-  }
-
- .assignment {
-    width: 70vh;
-  }
+    h1 {
+        font-size: 3.5vh;
+    }
+    h2 {
+        font-size: 2.5vh;
+    }
+    .assignment {
+        width: 70vh;
+    }
 }
 
 @media only screen and (max-width: 900px) {
-  h1 {
-    font-size: 3vh;
-  }
-
-  h2 {
-    font-size: 2vh;
-  }
-
- .assignment {
-    width: 60vh;
-  }
+    h1 {
+        font-size: 3vh;
+    }
+    h2 {
+        font-size: 2vh;
+    }
+    .assignment {
+        width: 60vh;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-  h1 {
-    font-size: 2.5vh;
-  }
-
-  h2 {
-    font-size: 1.5vh;
-  }
-
- .assignment {
-    width: 50vh;
-  }
+    h1 {
+        font-size: 2.5vh;
+    }
+    h2 {
+        font-size: 1.5vh;
+    }
+    .assignment {
+        width: 50vh;
+    }
 }
 
 @media only screen and (max-width: 400px) {
-  h1 {
-    font-size: 2vh;
-  }
-
-  h2 {
-    font-size: 1vh;
-  }
-
- .assignment {
-    width: 40vh;
-  }
+    h1 {
+        font-size: 2vh;
+    }
+    h2 {
+        font-size: 1vh;
+    }
+    .assignment {
+        width: 40vh;
+    }
 }
-
 
 
 /* Media queries for different screen sizes */
+
 @media only screen and (max-width: 1200px) {
-  #assignments-container {
-    max-width: 75vw;
-  }
-  .assignment {
-    width: 75%;
-  }
+    #assignments-container {
+        max-width: 75vw;
+    }
+    .assignment {
+        width: 75%;
+    }
 }
 
 @media only screen and (max-width: 900px) {
-  #assignments-container {
-    max-width: 65vw;
-  }
-  .assignment {
-    width: 65%;
-  }
+    #assignments-container {
+        max-width: 65vw;
+    }
+    .assignment {
+        width: 65%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-  #assignments-container {
-    max-width: 55vw;
-  }
-  .assignment {
-    width: 55%;
-  }
+    #assignments-container {
+        max-width: 55vw;
+    }
+    .assignment {
+        width: 55%;
+    }
 }
 
 @media only screen and (max-width: 400px) {
-  #assignments-container {
-    max-width: 45vw;
-  }
-  .assignment {
-    width: 45%;
-  }
+    #assignments-container {
+        max-width: 45vw;
+    }
+    .assignment {
+        width: 45%;
+    }
 }

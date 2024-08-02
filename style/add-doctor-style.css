@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
@@ -24,7 +24,7 @@ main {
 
 .add-doctor>h2 {
     font-size: 26px;
-    color: #102749;
+    color: #0F2B4E;
     font-weight: 600;
 }
 
@@ -118,12 +118,12 @@ label {
     font-weight: 600;
 }
 
-#profilePicUpload,
-#cvUpload {
+#profilePicUpload {
     visibility: hidden;
 }
 
-.btnProfilePicUpload {
+
+/*.btnProfilePicUpload {
     background-color: #4CAF50;
     color: white;
     padding: 6px 10px;
@@ -133,6 +133,16 @@ label {
     font-size: 14px;
     font-weight: 600;
     width: 170px;
+}*/
+
+.btnProfilePicUpload {
+    text-wrap: nowrap;
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: rgb(42, 165, 232);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 .btnCvUpload {

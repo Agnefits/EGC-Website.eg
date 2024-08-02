@@ -10,29 +10,21 @@
     z-index: 999;
     border-radius: 20px;
 }
-body {
-    font-family: 'Arial', sans-serif;
-    background : linear-gradient(to left , rgb(3, 3, 203),rgb(66, 84, 249),rgb(3, 161, 247)) ;
-}
-
-
 
 .container {
-   
-        background-color: #fff;
-        /* White background for form */
-        border-radius: 15px;
-        padding: 20px;
-        width: 600px;
-        /* Adjust width as needed */
-        margin: 0 auto;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        /* Subtle shadow effect */
-        position: absolute;
-    transform: translate(-50%,-50%);
-    top:50%;
+    background-color: #fff;
+    /* White background for form */
+    border-radius: 15px;
+    padding: 20px;
+    width: 600px;
+    /* Adjust width as needed */
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow effect */
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
     left: 50%;
-    
 }
 
 h2 {
@@ -55,7 +47,7 @@ ul {
     padding: 0;
 }
 
-li {
+main li {
     margin: 10px 0;
     padding: 10px;
     background-color: #ecf0f1;
@@ -85,7 +77,7 @@ button {
 button.absent,
 button.present,
 button.leave {
-    background-color: rgb(4, 8, 54);
+    background-color: #0F2B4E;
 }
 
 button {
@@ -101,16 +93,16 @@ button:hover {
     background-color: #2980b9;
 }
 
+
 /* Responsive styles for mobile view */
+
 @media screen and (max-width: 600px) {
     .container {
         padding: 10px;
     }
-
 }
 
-.submit_att
-{
+.submit_att {
     background-color: rgb(42, 165, 232);
     /* Green button */
     color: white;
@@ -122,6 +114,7 @@ button:hover {
     font-weight: 600;
     width: 100%;
 }
+
 #resultSection {
     margin-top: 20px;
 }

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 * {
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
     top: 0;
     height: 100%;
     width: 78px;
-    background: #0f2c4e;
+    background: #0F2B4E;
     padding: 6px 14px;
     z-index: 99;
     transition: all 0.5s ease;
@@ -137,7 +137,7 @@ body {
     align-items: center;
     text-decoration: none;
     transition: all 0.4s ease;
-    background: #0f2c4e;
+    background: #0F2B4E;
 }
 
 .sidebar li a:hover {
@@ -162,7 +162,7 @@ body {
 .sidebar li a:hover .links_name,
 .sidebar li a:hover i {
     transition: all 0.5s ease;
-    color: #0f2c4e;
+    color: #0F2B4E;
 }
 
 .sidebar li i {
@@ -180,7 +180,7 @@ body {
     left: 0;
     bottom: -8px;
     padding: 10px 14px;
-    background: #0f2c4e;
+    background: #0F2B4E;
     transition: all 0.5s ease;
     overflow: hidden;
 }
@@ -220,7 +220,7 @@ body {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    background: #0f2c4e;
+    background: #0F2B4E;
     width: 100%;
     height: 60px;
     line-height: 60px;
@@ -280,7 +280,7 @@ p {
     width: 20%;
     height: 5%;
     margin: 10px;
-    background-color: #0f2c4e;
+    background-color: #0F2B4E;
     text-align: left;
     border-radius: 10px;
     padding: 0px 25px 0px 25px;
@@ -333,7 +333,7 @@ table tr {
 
 .btn {
     padding: 5px 10px;
-    background-color: #0f2c4e;
+    background-color: #0F2B4E;
     color: #fff;
     text-decoration: none;
     text-align: center;

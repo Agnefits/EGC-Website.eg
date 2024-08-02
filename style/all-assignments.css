@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 * {
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     margin: 20px;
-    color: #0F2C4E;
+    color: #0F2B4E;
     background-color: #c5ddf9;
 }
 
@@ -24,7 +24,7 @@ header {
 }
 
 h1 {
-    color: #00698f;
+    color: #0F2B4E;
     font-size: 4vh;
 }
 
@@ -63,7 +63,7 @@ main {
 }
 
 .assignment .assign {
-    background-color: #00698f;
+    background-color: #0F2B4E;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -73,7 +73,7 @@ main {
 }
 
 .assignment .assign:hover {
-    background-color: #0F2C4E;
+    background-color: #0F2B4E;
     text-decoration: none;
 }
 
@@ -189,7 +189,7 @@ footer {
     top: 0;
     height: 100%;
     width: 78px;
-    background: #0f2c4e;
+    background: #0F2B4E;
     padding: 6px 14px;
     z-index: 99;
     transition: all 0.5s ease;
@@ -311,7 +311,7 @@ footer {
     align-items: center;
     text-decoration: none;
     transition: all 0.4s ease;
-    background: #0f2c4e;
+    background: #0F2B4E;
 }
 
 .sidebar li a:hover {
@@ -336,7 +336,7 @@ footer {
 .sidebar li a:hover .links_name,
 .sidebar li a:hover i {
     transition: all 0.5s ease;
-    color: #0f2c4e;
+    color: #0F2B4E;
 }
 
 .sidebar li i {
@@ -354,7 +354,7 @@ footer {
     left: 0;
     bottom: -8px;
     padding: 10px 14px;
-    background: #0f2c4e;
+    background: #0F2B4E;
     transition: all 0.5s ease;
     overflow: hidden;
 }
@@ -394,7 +394,7 @@ footer {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    background: #0f2c4e;
+    background: #0F2B4E;
     width: 100%;
     height: 60px;
     line-height: 60px;

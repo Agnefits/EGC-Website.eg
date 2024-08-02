@@ -9,112 +9,203 @@
     <link rel="icon" href="../img/logo.png" sizes="48x32">
     <!-- Custom CSS -->
     <link href="../style/Dashboard.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../style/staffDashboard.css">
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
 </head>
 
 <body>
-    <div style="margin-bottom:100px;">
-        <h2>Dashboard</h2>
-        <div class="row">
-            <!-- column -->
-            <div>
-                <div class="card card-hover">
-                    <a href="#">
-                        <img src="../img/img-course.png" alt="">
-                        <div class="overlay"></div>
-                        <h3 class="card-title">Css Course</h3>
-                    </a>
-                </div>
-                <div class="overlay"></div>
-            </div>
-            <!-- column -->
-            <div>
-                <div class="card card-hover ">
-                    <div class="overlay"></div>
-                    <a href="#">
-                        <img src="../img/img-course.png" alt="">
-                        <div class="overlay"></div>
-                        <h3 class="card-title">Css Course</h3>
-                    </a>
-                </div>
-            </div>
-            <!-- column -->
-            <div>
-                <div class="card card-hover ">
-                    <a href="#">
-                        <img src="../img/img-course.png" alt="">
-                        <div class="overlay"></div>
-                        <h3 class="card-title">Css Course</h3>
-                    </a>
-                </div>
-            </div>
+    <div class="sidebar">
+        <div class="logo-details">
+            <a href="../index.html?privilage=Staff"><img src="../img/logo.png" class="icon"></a>
+            <div class="logo_name">Egyptian Germany College</div>
+            <i class='bx bx-menu' id="btn"></i>
         </div>
+        <ul class="nav-list">
 
-        <div class="row">
-            <!-- column -->
-            <div>
-                <div class="card card-hover ">
-                    <a href="#">
-                        <img src="../img/img-course.png" alt="">
-                        <div class="overlay"></div>
-                        <h3 class="card-title">Css Course</h3>
-                    </a>
-                </div>
-            </div>
-            <!-- column -->
-            <div>
-                <div class="card card-hover ">
-                    <a href="#">
-                        <img src="../img/img-course.png" alt="">
-                        <div class="overlay"></div>
-                        <h3 class="card-title">Css Course</h3>
-                    </a>
-                </div>
-            </div>
-            <!-- column -->
-            <div>
-                <div class="card card-hover ">
-                    <a href="#">
-                        <img src="../img/img-course.png" alt="">
-                        <div class="overlay"></div>
-                        <h3 class="card-title">Css Course</h3>
-                    </a>
-                </div>
-            </div>
-        </div>
+            <li>
+                <a href="Dashboard.html">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="staff-announcements.html">
+                    <i class='bx bx-bell'></i>
+                    <span class="links_name">Announcements</span>
+                </a>
+                <span class="tooltip">Announcements</span>
+            </li>
+            <li>
+                <a href="course.html">
+                    <i class='bx bx-book-bookmark'></i>
+                    <span class="links_name">Courses</span>
+                </a>
+                <span class="tooltip">Courses</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-task'></i>
+                    <span class="links_name">Assignments</span>
+                </a>
+                <span class="tooltip">Assignments</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-file'></i>
+                    <span class="links_name">Quizzes</span>
+                </a>
+                <span class="tooltip">Quizzes</span>
+            </li>
+            <li>
+                <a href="staff.html">
+                    <i class='bx bx-mail-send'></i>
+                    <span class="links_name">Staff</span>
+                </a>
+                <span class="tooltip">Staff</span>
+            </li>
+            <li>
+                <a href="students.html">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">Students</span>
+                </a>
+                <span class="tooltip">Students</span>
+            </li>
+            <li>
+                <a href="add student att.html">
+                    <i class='bx bx-spreadsheet'></i>
+                    <span class="links_name">Add Student Attendance</span>
+                </a>
+                <span class="tooltip">Add Student Attendance</span>
 
-        <div class="row">
-            <!-- column -->
-            <div>
-                <div class="card card-hover ">
+                <li>
                     <a href="#">
-                        <img src="../img/img-course.png" alt="">
-                        <div class="overlay"></div>
-                        <h3 class="card-title">Css Course</h3>
+                        <i class='bx bx-cog'></i>
+                        <span class="links_name">Setting</span>
                     </a>
-                </div>
-            </div>
-            <!-- column -->
-            <div>
-                <div class="card card-hover ">
-                    <a href="#">
-                        <img src="../img/img-course.png" alt="">
-                        <div class="overlay"></div>
-                        <h3 class="card-title">Css Course</h3>
-                    </a>
-                </div>
-            </div>
-            <!-- column -->
-            <div>
-                <div class="card card-hover ">
-                    <a href="#">
-                        <img src="../img/img-course.png" alt="">
-                        <div class="overlay"></div>
-                        <h3 class="card-title">Css Course</h3>
-                    </a>
-                </div>
-            </div>
-        </div>
+                    <span class="tooltip">Setting</span>
+                </li>
+
+                <li class="profile">
+                    <div class="profile-details">
+                        <img src="../img/person1.JPG" alt="profileImg">
+                        <div class="name_email">
+                            <div class="name">Mariam Magdy</div>
+                            <div class="email">mariammagdy@gmail.com</div>
+                        </div>
+                    </div>
+                    <i class='bx bx-log-out' id="log_out"></i>
+                </li>
+        </ul>
     </div>
+    <main>
+        <div class="text">
+            <h3>Dashboard</h3>
+        </div>
+        <div>
+            <div class="row">
+                <!-- column -->
+                <div>
+                    <div class="card card-hover">
+                        <a href="#">
+                            <img src="../img/img-course.png" alt="">
+                            <div class="overlay"></div>
+                            <h3 class="card-title">Css Course</h3>
+                        </a>
+                    </div>
+                </div>
+                <!-- column -->
+                <div>
+                    <div class="card card-hover">
+                        <div class="overlay"></div>
+                        <a href="#">
+                            <img src="../img/img-course.png" alt="">
+                            <div class="overlay"></div>
+                            <h3 class="card-title">Css Course</h3>
+                        </a>
+                    </div>
+                </div>
+                <!-- column -->
+                <div>
+                    <div class="card card-hover">
+                        <a href="#">
+                            <img src="../img/img-course.png" alt="">
+                            <div class="overlay"></div>
+                            <h3 class="card-title">Css Course</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- column -->
+                <div>
+                    <div class="card card-hover">
+                        <a href="#">
+                            <img src="../img/img-course.png" alt="">
+                            <div class="overlay"></div>
+                            <h3 class="card-title">Css Course</h3>
+                        </a>
+                    </div>
+                </div>
+                <!-- column -->
+                <div>
+                    <div class="card card-hover">
+                        <a href="#">
+                            <img src="../img/img-course.png" alt="">
+                            <div class="overlay"></div>
+                            <h3 class="card-title">Css Course</h3>
+                        </a>
+                    </div>
+                </div>
+                <!-- column -->
+                <div>
+                    <div class="card card-hover">
+                        <a href="#">
+                            <img src="../img/img-course.png" alt="">
+                            <div class="overlay"></div>
+                            <h3 class="card-title">Css Course</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- column -->
+                <div>
+                    <div class="card card-hover">
+                        <a href="#">
+                            <img src="../img/img-course.png" alt="">
+                            <div class="overlay"></div>
+                            <h3 class="card-title">Css Course</h3>
+                        </a>
+                    </div>
+                </div>
+                <!-- column -->
+                <div>
+                    <div class="card card-hover">
+                        <a href="#">
+                            <img src="../img/img-course.png" alt="">
+                            <div class="overlay"></div>
+                            <h3 class="card-title">Css Course</h3>
+                        </a>
+                    </div>
+                </div>
+                <!-- column -->
+                <div>
+                    <div class="card card-hover">
+                        <a href="#">
+                            <img src="../img/img-course.png" alt="">
+                            <div class="overlay"></div>
+                            <h3 class="card-title">Css Course</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../script/StaffDashboard.js"></script>
 </body>
 
 </html>

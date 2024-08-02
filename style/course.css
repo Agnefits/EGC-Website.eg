@@ -1,19 +1,13 @@
-body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    background-color: black;
-  }
-.course{
+.course {
     background-color: hsl(0, 0%, 100%);
-    margin: 4% auto 5% auto; 
-    width: 45%; 
+    margin: 4% auto 5% auto;
+    width: 45%;
     box-shadow: 0 10px 10px rgba(5, 5, 5, 0.1);
     padding: 20px;
     border-radius: 15px;
 }
-.picture img{
+
+.picture img {
     width: 100px;
     height: 100px;
     border-radius: 1000%;
@@ -23,14 +17,17 @@ body {
     padding: 5px;
     margin-top: -90px;
 }
-h1{
+
+h1 {
     padding-left: 130px;
 }
+
 hr {
     border: 1px solid #f1f1f1;
     margin-bottom: 25px;
 }
-input[type=text]{
+
+input[type=text] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 20px 0;
@@ -39,20 +36,37 @@ input[type=text]{
     background: #f1f1f1;
     box-sizing: border-box;
     border-radius: 5px;
-  }
-input[type=text]:focus{
+}
+
+input[type=text]:focus {
     background-color: #ddd;
     outline: none;
-  }
-  .card{
+}
+
+.card {
     background-color: white;
     width: 80vw;
     border: 3PX solid #c6cbd1;
     margin-bottom: 10px;
-   
 }
-.card-course{
+
+.card-course {
     width: 150px;
     border: 3PX solid #c6cbd1;
     margin-bottom: 10px;
+}
+
+.btnAddCourse {
+    background: #0F2B4E;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    right: 10px;
+    top: 15px;
+    position: absolute;
 }

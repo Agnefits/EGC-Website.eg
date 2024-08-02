@@ -1,8 +1,8 @@
-function myFunction() {
-    var x = document.getElementById("myInput");
+document.getElementById("showPassword").addEventListener("click", function() {
+    var x = document.getElementById("password");
     if (x.type === "password") {
         x.type = "text";
     } else {
         x.type = "password";
     }
-}
+});

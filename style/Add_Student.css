@@ -1,7 +1,8 @@
 body {
     background-color: #f0f0f0;
-    font-family: sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
 }
+
 #addstudent {
     background-color: #fff;
     border-radius: 15px;
@@ -10,13 +11,15 @@ body {
     margin: 0 auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.profile-picture-student{
+
+.profile-picture-student {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
     border-radius: 5px;
     padding: 10px;
 }
+
 .profile-picture-student img {
     width: 100px;
     height: 100px;
@@ -25,21 +28,39 @@ body {
     box-shadow: -5px 5px 10px gray;
     margin-right: 20px;
 }
-.student_name, .department-year-format, .list-format{
+
+.student_name,
+.department-year-format,
+.list-format {
     display: flex;
     justify-content: space-between;
 }
-.fristname{
+
+.fristname {
     width: 45%;
 }
-.lastname{
+
+.lastname {
     width: 50%;
 }
-.Dep-Year, .list{
+
+.Dep-Year,
+.list {
     width: 47%;
 }
-#profileUploadPic, #nationalId, #username, #email, #phone_no ,
-#password, #department, #yearlevel, #lastname, #firstname, #No_list, #No_section {
+
+#profileUploadPic,
+#nationalId,
+#username,
+#email,
+#phone_no,
+#password,
+#department,
+#yearlevel,
+#lastname,
+#firstname,
+#No_list,
+#No_section {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -47,20 +68,27 @@ body {
     margin-bottom: 10px;
     box-sizing: border-box;
 }
-label.male, .female, .show-password{
+
+label.male,
+.female,
+.show-password {
     font-size: 16px;
     font-weight: lighter;
 }
-#gender-radio{
-padding-bottom: 10px;
+
+#gender-radio {
+    padding-bottom: 10px;
 }
-.male{
+
+.male {
     padding-right: 130px;
 }
-label{
+
+label {
     font-weight: bold;
 }
-#add-student-btn{
+
+#add-student-btn {
     border-radius: 5px;
     background-color: rgb(42, 165, 232);
     color: #fff;
@@ -70,19 +98,22 @@ label{
     height: 40px;
     font-weight: bold;
 }
+
 #message {
-    display:none;
+    display: none;
     background: #f1f1f1;
     color: #000;
     position: relative;
     padding: 20px;
     margin-top: 10px;
-} 
+}
+
 #message p {
     padding: 10px 35px;
     font-size: 18px;
 }
-.image_label{
+
+.image_label {
     display: inline-block;
     padding: 0.5em 1em;
     background-color: rgb(42, 165, 232);
@@ -90,6 +121,7 @@ label{
     cursor: pointer;
     border-radius: 5px;
 }
-.image-input{
+
+.image-input {
     display: none;
 }

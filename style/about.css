@@ -16,30 +16,28 @@
 } */
 
 .welcomme h2 {
-    color: #0F2C4E;
+    color: #0F2B4E;
     /* padding: 50px; 
      padding-top: 30px;
     padding-bottom: 10px; 
     font-size: 3vw;
     margin-top: 1px;
      margin-left: 25px; */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .welcomme .content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 7rem;
+    /*margin-bottom: 7rem;*/
 }
 
 .welcomme .content .text {
-    color: #0F2C4E;
+    color: #0F2B4E;
     font-size: 2vw;
     line-height: 1.5;
     padding-left: 60px;
     flex: 1;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .welcomme .content .image {
@@ -50,8 +48,9 @@
 .welcomme .content img {
     max-width: 70%;
     height: auto;
-    border-radius: 70px;
+    border-radius: 3.5vw;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-width: 3px;
     border-style: solid;
-    border-color: #0F2C4E;
+    border-color: #0F2B4E;
 }

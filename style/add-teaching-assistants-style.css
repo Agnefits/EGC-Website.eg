@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
@@ -24,12 +24,20 @@ main {
 
 .add-doctor>h2 {
     font-size: 26px;
-    color: #102749;
+    color: #0F2B4E;
     font-weight: 600;
 }
 
-#profileUploadPic, #nationalId, #username, #email, #phone_no ,
-#password, #department, #yearlevel, #lastname, #firstname {
+#profileUploadPic,
+#nationalId,
+#username,
+#email,
+#phone_no,
+#password,
+#department,
+#yearlevel,
+#lastname,
+#firstname {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -37,19 +45,23 @@ main {
     margin-bottom: 10px;
     box-sizing: border-box;
 }
-label.male, .female, .show-password{
+
+label.male,
+.female,
+.show-password {
     font-size: 16px;
     font-weight: lighter;
 }
 
-.profile-picture{
+.profile-picture {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
     border-radius: 5px;
     padding: 10px;
 }
-.profile-picture img  {
+
+.profile-picture img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -57,6 +69,7 @@ label.male, .female, .show-password{
     box-shadow: -5px 5px 10px gray;
     margin-right: 20px;
 }
+
 .add-doctor form input,
 .add-doctor form select,
 .add-doctor form textarea {
@@ -69,7 +82,7 @@ label.male, .female, .show-password{
 }
 
 .add-doctor form label {
-    display: block;
+    display: inline-block;
     margin-bottom: 5px;
 }
 
@@ -86,22 +99,37 @@ label.male, .female, .show-password{
     width: 100%;
 }
 
-label.male, .female, .show-password{
+label.male,
+.female,
+.show-password {
     font-size: 16px;
     font-weight: lighter;
 }
-#gender-radio{
-padding-bottom: 10px;
+
+#gender-radio {
+    padding-bottom: 10px;
 }
-.male{
+
+.male {
     padding-right: 130px;
 }
-label{
+
+label {
     font-weight: bold;
 }
 
-#profileUploadPic, #nationalId, #username, #email, #phone_no ,
-#password, #department, #yearlevel, #lastname, #firstname, #No_list, #No_section {
+#profileUploadPic,
+#nationalId,
+#username,
+#email,
+#phone_no,
+#password,
+#department,
+#yearlevel,
+#lastname,
+#firstname,
+#No_list,
+#No_section {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -109,11 +137,13 @@ label{
     margin-bottom: 10px;
     box-sizing: border-box;
 }
+
 label {
     font-size: 16px;
     font-weight: 600;
 }
-.image_label{
+
+.image_label {
     display: inline-block;
     padding: 0.5em 1em;
     background-color: rgb(42, 165, 232);
@@ -121,9 +151,15 @@ label {
     cursor: pointer;
     border-radius: 5px;
 }
-.image-input{
+
+.image-input {
     display: none;
 }
 
+#showPassword {
+    width: max-content;
+}
 
-
+.lblShowPassword {
+    font-weight: lighter;
+}

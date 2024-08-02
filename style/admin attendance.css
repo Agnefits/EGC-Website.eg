@@ -1,13 +1,9 @@
-
 body {
-    font-family: 'Arial', sans-serif;
-    background : linear-gradient(to left , rgb(3, 3, 203),rgb(66, 84, 249),rgb(3, 161, 247)) ;
+    font-family: "Roboto Condensed", sans-serif;
+    /*background: linear-gradient(to left, rgb(3, 3, 203), rgb(66, 84, 249), rgb(3, 161, 247));*/
 }
 
-
-
 .container {
-   
     background-color: #fff;
     /* White background for form */
     border-radius: 15px;
@@ -18,13 +14,13 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     /* Subtle shadow effect */
     position: absolute;
-    transform: translate(-50%,-50%);
-    top:50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
     left: 50%;
     box-sizing: border-box;
-    max-height: 80vh; 
+    max-height: 80vh;
     overflow-y: auto;
-    scrollbar-width: none; 
+    scrollbar-width: none;
     -ms-overflow-style: none;
 }
 
@@ -51,19 +47,19 @@ ul {
 li {
     margin: 10px 0;
     padding: 10px;
-    
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
-li:nth-child(1) {
+
+main li:nth-child(1) {
     background-color: lightgreen;
-  }
-  
-  li:nth-child(2) {
+}
+
+main li:nth-child(2) {
     background-color: lightpink;
-  }
+}
 
 strong {
     margin-right: 10px;
@@ -73,7 +69,3 @@ strong {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-
-
-
-

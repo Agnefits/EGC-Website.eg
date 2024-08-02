@@ -8,11 +8,11 @@
 }
 
 .contant h2 {
-    color: #0F2C4E;
+    color: #0F2B4E;
     /*font-size: 3vw;
      margin-top: 85px; 
     margin-left: 60px;*/
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 div.cardes div {
@@ -22,7 +22,7 @@ div.cardes div {
     display: flex;
     align-items: center;
     border-radius: 3vw;
-    background-color: #0F2C4E;
+    background-color: #0F2B4E;
     color: white;
     margin-left: 5vw;
     margin-top: 3vh;
@@ -31,7 +31,7 @@ div.cardes div {
 
 .contant p {
     font-size: 2vw;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     text-align: center;
 }
 

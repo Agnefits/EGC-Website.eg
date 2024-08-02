@@ -13,7 +13,7 @@
     /* Stay at the top */
     right: 0;
     /* Slide from the right */
-    background-color: #0F2C4E;
+    background-color: #0F2B4E;
     /* Black */
     border-left: 0.5vw solid rgb(42, 165, 232);
     /* Grey border */
@@ -44,7 +44,7 @@
     transition: color 0.5s ease-in-out;
     /* Color change transition */
     text-wrap: nowrap;
-    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 

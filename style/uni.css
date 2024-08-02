@@ -12,8 +12,8 @@
     font-size: 3vw;
     margin-top: 60px;
     margin-left: 25px; */
-    color: #0F2C4E;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0F2B4E;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 div.container2 {
@@ -26,4 +26,5 @@ div.container2 {
 
 div.container2 img {
     padding: 5px;
+    scroll-snap-align: center;
 }

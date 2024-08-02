@@ -7,18 +7,74 @@
     <title>Add Doctor</title>
     <link rel="icon" href="../img/logo.png" sizes="48x32">
     <link rel="stylesheet" href="../style/add-doctor-style.css">
+    <link rel="stylesheet" href="../style/adminDashboard.css">
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
 </head>
 
 <body>
-    <header>
-    </header>
+    <div class="sidebar">
+        <div class="logo-details">
+            <a href="../index.html?privilage=Admin"><img src="../img/logo.png" class="icon"></a>
+            <div class="logo_name">Egyptian Germany College</div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="add-doctor.html">
+                    <i class='bx bx-user-plus'></i>
+                    <span class="links_name">Add Doctor</span>
+                </a>
+                <span class="tooltip">Add Doctor</span>
+            </li>
+            <li>
+                <a href="add-teaching-assistants.html">
+                    <i class='bx bx-user-plus'></i>
+                    <span class="links_name">Add Teaching Assistant</span>
+                </a>
+                <span class="tooltip">Add Teaching Assistant</span>
+            </li>
+            <li>
+                <a href="Add_Student.html">
+                    <i class='bx bx-user-plus'></i>
+                    <span class="links_name">Add Student</span>
+                </a>
+                <span class="tooltip">Add Student</span>
+            </li>
+            <li>
+                <a href="admin attendance.html">
+                    <i class='bx bx-spreadsheet'></i>
+                    <span class="links_name">Show Student Attendance</span>
+                </a>
+                <span class="tooltip">Show Student Attendance</span>
+            </li>
+            <li class="profile">
+                <div class="profile-details">
+                    <img src="../img/person1.JPG" alt="profileImg">
+                    <div class="name_email">
+                        <div class="name">Mariam Magdy</div>
+                        <div class="email">mariammagdy@gmail.com</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="log_out"></i>
+            </li>
+        </ul>
+    </div>
+
     <main>
         <section class="add-doctor">
             <h2>Add Doctor</h2>
             <form id="addDoctorForm">
                 <div class="profile-picture">
                     <img src="../img/professor.png" alt="Doctor Profile Picture">
-                    <label for="profilePicUpload" class="btnProfilePicUpload">Choose Photo</label>
+                    <label for="profilePicUpload" class="btnProfilePicUpload">Choose Image</label>
                     <input type="file" id="profilePicUpload" accept="image/*">
                 </div>
                 <div class="personal-info">
@@ -68,17 +124,17 @@
                 </div>
                 -->
 
-                <div class="cv">
-                    <label for="cvUpload" class="btnCvUpload">Choose CV</label>
-                    <input type="file" id="cvUpload">
+
+                </select>
+                <label for="cv">CV:</label>
+                <input type="file" id="cvUpload" accept="pdf/*">
                 </div>
                 <button type="submit" id="add-doctor-button">Add Doctor</button>
             </form>
         </section>
     </main>
-    <footer>
-    </footer>
     <script src="../script/add-doctor-script.js"></script>
+    <script src="../script/AdminDashboard.js"></script>
 </body>
 
 </html>
