@@ -1,32 +1,31 @@
-document.addEventListener("DOMContentLoaded",
-    function () {
-        populateClasses();
-        showStudentsList();
-       
-    });
+document.addEventListener('DOMContentLoaded', function() {
+    populateClasses();
+    loadDepartments(); // Ensure departments are loaded
+    showStudentsList();
+});
 
- 
+
 function showAddStudentForm() {
     document.getElementById('addStudentPopup').
-        style.display = 'block';
+    style.display = 'block';
 }
+
 
 function showAddClassForm() {
     // Show the add class popup
     document.getElementById('addClassPopup').
-        style.display = 'block';
+    style.display = 'block';
 }
+
 
 function showAddDepartmentForm() {
     document.getElementById('addDepartmentPopup').style.display = 'block';
 }
 
 function addStudent() {
-    // Get input values
-    const newStudentName = document.
-        getElementById('newStudentName').value;
-    const newStudentRoll = document.
-        getElementById('newStudentRoll').value;
+    const newStudentName = document.getElementById('newStudentName').value;
+    const newStudentRoll = document.getElementById('newStudentRoll').value;
+    const department = departmentSelect.value;
 
     if (!newStudentName || !newStudentRoll) {
         alert("Please provide both name and roll number.");
@@ -34,30 +33,17 @@ function addStudent() {
     }
 
     // Add the new student to the list
-    const classSelector = document.
-        getElementById('classSelector');
-    const selectedClass = classSelector.
-        options[classSelector.selectedIndex].value;
-    const studentsList = document.
-        getElementById('studentsList');
+    const classSelector = document.getElementById('classSelector');
+    const selectedClass = classSelector.options[classSelector.selectedIndex].value;
+    const studentsList = document.getElementById('studentsList');
 
     const listItem = document.createElement('li');
     listItem.setAttribute('data-roll-number', newStudentRoll);
-    listItem.innerHTML =
-        `<strong>
-            ${newStudentName}
-        </strong> 
-        (Roll No. ${newStudentRoll})`;
+    listItem.innerHTML = `<strong>${newStudentName}</strong> (Roll No. ${newStudentRoll})`;
 
-    const absentButton =
-        createButton('A', 'absent',
-            () => markAttendance('absent', listItem, selectedClass));
-    const presentButton =
-        createButton('P', 'present',
-            () => markAttendance('present', listItem, selectedClass));
-    const leaveButton =
-        createButton('L', 'leave',
-            () => markAttendance('leave', listItem, selectedClass));
+    const absentButton = createButton('A', 'absent', () => markAttendance('absent', listItem, selectedClass, department));
+    const presentButton = createButton('P', 'present', () => markAttendance('present', listItem, selectedClass, department));
+    const leaveButton = createButton('L', 'leave', () => markAttendance('leave', listItem, selectedClass, department));
 
     listItem.appendChild(absentButton);
     listItem.appendChild(presentButton);
@@ -70,9 +56,13 @@ function addStudent() {
     document.getElementById('newStudentRoll').value = '';
 }
 
+
+
+
+
 function addClass() {
     const newClassName = document.
-        getElementById('newClassName').value;
+    getElementById('newClassName').value;
 
     if (!newClassName) {
         alert("Please provide a class name.");
@@ -81,9 +71,9 @@ function addClass() {
 
     // Add the new class to the class selector
     const classSelector = document.
-        getElementById('classSelector');
+    getElementById('classSelector');
     const newClassOption = document.
-        createElement('option');
+    createElement('option');
     newClassOption.value = newClassName;
     newClassOption.text = newClassName;
     classSelector.add(newClassOption);
@@ -91,6 +81,7 @@ function addClass() {
     closePopup();
     document.getElementById('newClassName').value = '';
 }
+
 
 function addDepartment() {
     const newDepartmentName = document.getElementById('newDepartmentName').value;
@@ -119,40 +110,40 @@ const departmentSelect = document.getElementById('departmentSelector');
 
 // Save department options to localStorage
 function saveDepartments() {
-  const departmentOptions = Array.from(departmentSelect.options).map(option => option.value);
-  localStorage.setItem('departments', JSON.stringify(departmentOptions));
+    const departmentOptions = Array.from(departmentSelect.options).map(option => option.value);
+    localStorage.setItem('departments', JSON.stringify(departmentOptions));
 }
 
 // Load department options from localStorage
 function loadDepartments() {
-  const storedDepartments = localStorage.getItem('departments');
-  if (storedDepartments) {
-    const departmentOptions = JSON.parse(storedDepartments);
-    departmentOptions.forEach(option => {
-      const newOption = document.createElement('option');
-      newOption.value = option;
-      newOption.text = option;
-      departmentSelect.add(newOption);
-    });
-  }
+    const storedDepartments = localStorage.getItem('departments');
+    if (storedDepartments) {
+        const departmentOptions = JSON.parse(storedDepartments);
+        departmentOptions.forEach(option => {
+            const newOption = document.createElement('option');
+            newOption.value = option;
+            newOption.text = option;
+            departmentSelect.add(newOption);
+        });
+    }
 }
 
 // Call loadDepartments on page load
 document.addEventListener('DOMContentLoaded', loadDepartments);
 
+
 function submitAttendance() {
     const classSelector = document.
-        getElementById('classSelector');
+    getElementById('classSelector');
 
     if (!classSelector || !classSelector.options ||
         classSelector.selectedIndex === -1) {
-        console.error
-            ('Class selector is not properly defined or has no options.');
+        console.error('Class selector is not properly defined or has no options.');
         return;
     }
 
     const selectedClass = classSelector.
-        options[classSelector.selectedIndex].value;
+    options[classSelector.selectedIndex].value;
 
     if (!selectedClass) {
         console.error('Selected class is not valid.');
@@ -171,29 +162,27 @@ function submitAttendance() {
         // If attendance is submitted, hide the 
         // summary and show the attendance result
         document.getElementById('summarySection').
-            style.display = 'none';
+        style.display = 'none';
         showAttendanceResult(selectedClass);
     } else {
         // If attendance is not submitted, show the summary
         document.getElementById('summarySection').
-            style.display = 'block';
+        style.display = 'block';
         document.getElementById('resultSection').
-            style.display = 'none';
+        style.display = 'none';
     }
     // Clear the student list and reset the form
     studentsList.innerHTML = '';
 }
 
 function isAttendanceSubmittedForClass(selectedClass) {
-    const savedAttendanceData = JSON.parse
-        (localStorage.getItem('attendanceData')) || [];
-    return savedAttendanceData.some
-        (record => record.class === selectedClass);
+    const savedAttendanceData = JSON.parse(localStorage.getItem('attendanceData')) || [];
+    return savedAttendanceData.some(record => record.class === selectedClass);
 }
 
 function showAttendanceResult(selectedClass) {
     const resultSection = document.
-        getElementById('resultSection');
+    getElementById('resultSection');
 
     if (!resultSection) {
         console.error('Result section is not properly defined.');
@@ -203,17 +192,16 @@ function showAttendanceResult(selectedClass) {
     const now = new Date();
     const date =
         `${now.getFullYear()}-${String(now.getMonth() + 1).
-        padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+    padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
     const time =
         `${String(now.getHours()).padStart(2, '0')}:
-        ${String(now.getMinutes()).padStart(2, '0')}:
-        ${String(now.getSeconds()).padStart(2, '0')}`;
+    ${String(now.getMinutes()).padStart(2, '0')}:
+    ${String(now.getSeconds()).padStart(2, '0')}`;
 
     // Retrieve attendance data from local storage
-    const savedAttendanceData = JSON.parse
-        (localStorage.getItem('attendanceData')) || [];
+    const savedAttendanceData = JSON.parse(localStorage.getItem('attendanceData')) || [];
     const filteredAttendanceData = savedAttendanceData.
-        filter(record => record.class === selectedClass);
+    filter(record => record.class === selectedClass);
 
     const totalStudents = filteredAttendanceData.
     reduce((acc, record) => {
@@ -224,27 +212,27 @@ function showAttendanceResult(selectedClass) {
     }, []).length;
 
     const totalPresent = filteredAttendanceData.
-        filter(record => record.status === 'present').length;
+    filter(record => record.status === 'present').length;
     const totalAbsent = filteredAttendanceData.
-        filter(record => record.status === 'absent').length;
+    filter(record => record.status === 'absent').length;
     const totalLeave = filteredAttendanceData.
-        filter(record => record.status === 'leave').length;
+    filter(record => record.status === 'leave').length;
 
     // Update the result section
     document.getElementById('attendanceDate').
-        innerText = date;
+    innerText = date;
     document.getElementById('attendanceTime').
-        innerText = time;
+    innerText = time;
     document.getElementById('attendanceClass').
-        innerText = selectedClass;
+    innerText = selectedClass;
     document.getElementById('attendanceTotalStudents').
-        innerText = totalStudents;
+    innerText = totalStudents;
     document.getElementById('attendancePresent').
-        innerText = totalPresent;
+    innerText = totalPresent;
     document.getElementById('attendanceAbsent').
-        innerText = totalAbsent;
+    innerText = totalAbsent;
     document.getElementById('attendanceLeave').
-        innerText = totalLeave;
+    innerText = totalLeave;
 
     // Show the attendance result section
     resultSection.style.display = 'block';
@@ -253,11 +241,11 @@ function showAttendanceResult(selectedClass) {
 function closePopup() {
     // Close the currently open popup
     document.getElementById('addStudentPopup').
-        style.display = 'none';
+    style.display = 'none';
     document.getElementById('addClassPopup').
-        style.display = 'none';
-        document.getElementById('addDepartmentPopup').
-        style.display = 'none';
+    style.display = 'none';
+    document.getElementById('addDepartmentPopup').
+    style.display = 'none';
 
 }
 
@@ -272,13 +260,12 @@ function createButton(text, status, onClick) {
 
 function populateClasses() {
     // Retrieve classes from local storage
-    const savedClasses = JSON.parse
-        (localStorage.getItem('classes')) || [];
-    const classSelector = 
+    const savedClasses = JSON.parse(localStorage.getItem('classes')) || [];
+    const classSelector =
         document.getElementById('classSelector');
 
     savedClasses.forEach(className => {
-        const newClassOption = 
+        const newClassOption =
             document.createElement('option');
         newClassOption.value = className;
         newClassOption.text = className;
@@ -287,54 +274,25 @@ function populateClasses() {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 function showStudentsList() {
-    const classSelector = 
-        document.getElementById('classSelector');
-    const selectedClass = classSelector.
-        options[classSelector.selectedIndex].value;
-
-    const studentsList = 
-        document.getElementById('studentsList');
+    const classSelector = document.getElementById('classSelector');
+    const selectedClass = classSelector.options[classSelector.selectedIndex].value;
+    const studentsList = document.getElementById('studentsList');
     studentsList.innerHTML = '';
 
     // Retrieve students from local storage
-    const savedStudents = JSON.parse
-        (localStorage.getItem('students')) || {};
-    const selectedClassStudents = 
-        savedStudents[selectedClass] || [];
-
+    const savedStudents = JSON.parse(localStorage.getItem('students')) || {};
+    const selectedClassStudents = savedStudents[selectedClass] || [];
     selectedClassStudents.forEach(student => {
         const listItem = document.createElement('li');
-        listItem.setAttribute
-            ('data-roll-number', student.rollNumber);
-        listItem.innerHTML = 
-            `<strong>
-                ${student.name}
-            </strong> 
-            (Roll No. ${student.rollNumber})`;
+        listItem.setAttribute('data-roll-number', student.rollNumber);
+        listItem.innerHTML = `<strong>${student.name}</strong> (Roll No. ${student.rollNumber})`;
 
-        const absentButton = createButton('A', 'absent', 
-            () => markAttendance('absent', listItem, selectedClass));
-        const presentButton = createButton('P', 'present', 
-            () => markAttendance('present', listItem, selectedClass));
-        const leaveButton = createButton('L', 'leave', 
-            () => markAttendance('leave', listItem, selectedClass));
+        const absentButton = createButton('A', 'absent', () => markAttendance('absent', listItem, selectedClass, departmentSelect.value));
+        const presentButton = createButton('P', 'present', () => markAttendance('present', listItem, selectedClass, departmentSelect.value));
+        const leaveButton = createButton('L', 'leave', () => markAttendance('leave', listItem, selectedClass, departmentSelect.value));
 
-        const savedColor = getSavedColor
-            (selectedClass, student.rollNumber);
+        const savedColor = getSavedColor(selectedClass, student.rollNumber);
         if (savedColor) {
             listItem.style.backgroundColor = savedColor;
         }
@@ -346,28 +304,23 @@ function showStudentsList() {
         studentsList.appendChild(listItem);
     });
 
-    // Check if attendance for the 
-    // selected class has been submitted
-    const resultSection = document.
-        getElementById('resultSection');
-    const isAttendanceSubmitted = 
-        resultSection.style.display === 'block';
+    // Check if attendance for the selected class has been submitted
+    const resultSection = document.getElementById('resultSection');
+    const isAttendanceSubmitted = resultSection.style.display === 'block';
 
-    // Show the appropriate section based 
-    // on the attendance submission status
+    // Show the appropriate section based on the attendance submission status
     if (isAttendanceSubmitted) {
-        // Attendance has been submitted, 
-        // show the attendance result
+        // Attendance has been submitted, show the attendance result
         showAttendanceResult(selectedClass);
     } else {
-        // Attendance not submitted, 
-        // show the normal summary
+        // Attendance not submitted, show the normal summary
         showSummary(selectedClass);
     }
 }
 
+
 function showAttendanceResult(selectedClass) {
-    const resultSection = 
+    const resultSection =
         document.getElementById('resultSection');
 
     if (!resultSection) {
@@ -376,19 +329,18 @@ function showAttendanceResult(selectedClass) {
     }
 
     const now = new Date();
-    const date = 
+    const date =
         `${now.getFullYear()}-${String(now.getMonth() + 1).
-        padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
-    const time = 
+    padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+    const time =
         `${String(now.getHours()).padStart(2, '0')}:
-        ${String(now.getMinutes()).padStart(2, '0')}:
-        ${String(now.getSeconds()).padStart(2, '0')}`;
+    ${String(now.getMinutes()).padStart(2, '0')}:
+    ${String(now.getSeconds()).padStart(2, '0')}`;
 
     // Retrieve attendance data from local storage
-    const savedAttendanceData = JSON.parse
-        (localStorage.getItem('attendanceData')) || [];
+    const savedAttendanceData = JSON.parse(localStorage.getItem('attendanceData')) || [];
     const filteredAttendanceData = savedAttendanceData.
-        filter(record => record.class === selectedClass);
+    filter(record => record.class === selectedClass);
 
     const totalStudents = filteredAttendanceData.
     reduce((acc, record) => {
@@ -399,53 +351,47 @@ function showAttendanceResult(selectedClass) {
     }, []).length;
 
     const totalPresent = filteredAttendanceData.
-        filter(record => record.status === 'present').length;
+    filter(record => record.status === 'present').length;
     const totalAbsent = filteredAttendanceData.
-        filter(record => record.status === 'absent').length;
+    filter(record => record.status === 'absent').length;
     const totalLeave = filteredAttendanceData.
-        filter(record => record.status === 'leave').length;
+    filter(record => record.status === 'leave').length;
 
     // Update the result section
-    const resultContent = 
+    const resultContent =
         `Date: ${date} | Time: ${time} | 
-        Total Students: ${totalStudents} | 
-        Present: ${totalPresent} | 
-        Absent: ${totalAbsent} | Leave: ${totalLeave}`;
+    Total Students: ${totalStudents} | 
+    Present: ${totalPresent} | 
+    Absent: ${totalAbsent} | Leave: ${totalLeave}`;
     resultSection.innerHTML = resultContent;
 
     // Show the result section
     resultSection.style.display = 'block';
 
     // Show the list of students below the result section
-    const studentsListHTML = 
+    const studentsListHTML =
         generateStudentsListHTML(filteredAttendanceData);
-    resultSection.insertAdjacentHTML
-        ('afterend', studentsListHTML);
+    resultSection.insertAdjacentHTML('afterend', studentsListHTML);
 }
 
+function markAttendance(status, listItem, selectedClass, department) {
+    // Find the corresponding student name and roll number
+    const studentName = listItem.querySelector('strong').innerText;
+    const rollNumber = listItem.getAttribute('data-roll-number');
 
-function markAttendance
-    (status, listItem, selectedClass) {
-    // Find the corresponding student name
-    const studentName = listItem.
-        querySelector('strong').innerText;
-
-    // Update the background color of the student 
-    // row based on the attendance status
-    listItem.style.backgroundColor = 
-        getStatusColor(status);
+    // Update the background color of the student row based on the attendance status
+    listItem.style.backgroundColor = getStatusColor(status);
 
     // Save the background color to local storage
-    saveColor(selectedClass, 
-        listItem.getAttribute('data-roll-number'), 
-        getStatusColor(status));
+    saveColor(selectedClass, rollNumber, getStatusColor(status));
 
     // Update the attendance record for the specific student
-    updateAttendanceRecord(studentName, selectedClass, status);
+    updateAttendanceRecord(studentName, selectedClass, status, department, rollNumber);
 
     // Show the summary for the selected class
     showSummary(selectedClass);
 }
+
 
 function getStatusColor(status) {
     switch (status) {
@@ -460,44 +406,45 @@ function getStatusColor(status) {
     }
 }
 
-function updateAttendanceRecord
-    (studentName, selectedClass, status) {
+function updateAttendanceRecord(studentName, selectedClass, status, department, rollNumber) {
     // Retrieve existing attendance data from local storage
-    const savedAttendanceData = JSON.parse
-        (localStorage.getItem('attendanceData')) || [];
+    const savedAttendanceData = JSON.parse(localStorage.getItem('attendanceData')) || [];
 
     // Check if the record already exists
-    const existingRecordIndex = savedAttendanceData.
-        findIndex(record => record.name === studentName && 
-            record.class === selectedClass);
+    const existingRecordIndex = savedAttendanceData.findIndex(record =>
+        record.name === studentName &&
+        record.class === selectedClass &&
+        record.rollNumber === rollNumber &&
+        record.department === department
+    );
 
     if (existingRecordIndex !== -1) {
         // Update the existing record
-        savedAttendanceData[existingRecordIndex].
-            status = status;
-        savedAttendanceData[existingRecordIndex].
-            date = getCurrentDate();
+        savedAttendanceData[existingRecordIndex].status = status;
+        savedAttendanceData[existingRecordIndex].date = getCurrentDate();
     } else {
         // Add a new record
-        savedAttendanceData.push(
-            { 
-                name: studentName, class: selectedClass, 
-                status: status, date: getCurrentDate() 
-            });
+        savedAttendanceData.push({
+            name: studentName,
+            class: selectedClass,
+            status: status,
+            date: getCurrentDate(),
+            department: department,
+            rollNumber: rollNumber
+        });
     }
 
     // Save updated attendance data to local storage
-    localStorage.setItem('attendanceData', 
-        JSON.stringify(savedAttendanceData));
+    localStorage.setItem('attendanceData', JSON.stringify(savedAttendanceData));
 }
 
+
 function showSummary(selectedClass) {
-    const savedAttendanceData = JSON.parse
-        (localStorage.getItem('attendanceData')) || [];
+    const savedAttendanceData = JSON.parse(localStorage.getItem('attendanceData')) || [];
 
     // Filter attendance data based on the selected class
     const filteredAttendanceData = savedAttendanceData.
-        filter(record => record.class === selectedClass);
+    filter(record => record.class === selectedClass);
 
     const totalStudents = filteredAttendanceData.
     reduce((acc, record) => {
@@ -508,48 +455,47 @@ function showSummary(selectedClass) {
     }, []).length;
 
     const totalPresent = filteredAttendanceData.
-        filter(record => record.status === 'present').length;
+    filter(record => record.status === 'present').length;
     const totalAbsent = filteredAttendanceData.
-        filter(record => record.status === 'absent').length;
+    filter(record => record.status === 'absent').length;
     const totalLeave = filteredAttendanceData.
-        filter(record => record.status === 'leave').length;
+    filter(record => record.status === 'leave').length;
 
     document.getElementById('totalStudents').
-        innerText = totalStudents;
+    innerText = totalStudents;
     document.getElementById('totalPresent').
-        innerText = totalPresent;
+    innerText = totalPresent;
     document.getElementById('totalAbsent').
-        innerText = totalAbsent;
+    innerText = totalAbsent;
     document.getElementById('totalLeave').
-        innerText = totalLeave;
+    innerText = totalLeave;
 }
 
 function getCurrentDate() {
     const now = new Date();
     const year = now.getFullYear();
     const month = String(now.getMonth() + 1).
-        padStart(2, '0');
+    padStart(2, '0');
     const day = String(now.getDate()).
-        padStart(2, '0');
+    padStart(2, '0');
     return `${year}-${month}-${day}`;
 }
 
 function saveClasses() {
     // Save classes to local storage
     const classSelector = document.
-        getElementById('classSelector');
+    getElementById('classSelector');
     const savedClasses = Array.from(classSelector.options).
-        map(option => option.value);
-    localStorage.setItem('classes', 
+    map(option => option.value);
+    localStorage.setItem('classes',
         JSON.stringify(savedClasses));
 }
 
 function saveStudentsList(selectedClass) {
     // Save the updated student list to local storage
     const studentsList = document.
-        getElementById('studentsList');
-    const savedStudents = JSON.parse
-        (localStorage.getItem('students')) || {};
+    getElementById('studentsList');
+    const savedStudents = JSON.parse(localStorage.getItem('students')) || {};
     const selectedClassStudents = Array.from(studentsList.children).
     map(item => {
         return {
@@ -559,24 +505,25 @@ function saveStudentsList(selectedClass) {
     });
 
     savedStudents[selectedClass] = selectedClassStudents;
-    localStorage.setItem
-        ('students', JSON.stringify(savedStudents));
+    localStorage.setItem('students', JSON.stringify(savedStudents));
 }
 
 function saveColor(selectedClass, rollNumber, color) {
-    const savedColors = JSON.parse
-    (localStorage.getItem('colors')) || {};
+    const savedColors = JSON.parse(localStorage.getItem('colors')) || {};
     if (!savedColors[selectedClass]) {
         savedColors[selectedClass] = {};
     }
     savedColors[selectedClass][rollNumber] = color;
-    localStorage.setItem('colors', 
+    localStorage.setItem('colors',
         JSON.stringify(savedColors));
 }
 
 function getSavedColor(selectedClass, rollNumber) {
-    const savedColors = JSON.parse
-        (localStorage.getItem('colors')) || {};
-    return savedColors[selectedClass] ? 
+    const savedColors = JSON.parse(localStorage.getItem('colors')) || {};
+    return savedColors[selectedClass] ?
         savedColors[selectedClass][rollNumber] : null;
 }
+
+
+
+//localStorage.clear();

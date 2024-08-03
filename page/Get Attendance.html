@@ -2,18 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Students</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Students Attendance Sheet</title>
     <link rel="icon" href="../img/logo.png" sizes="48x32">
-    <link rel="stylesheet" href="../style/staff.css">
-    <!-- <link rel="stylesheet" href="../css/nav.css"> -->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../style/Get Attendance.css">
     <link rel="stylesheet" href="../style/staffDashboard.css">
     <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
 </head>
 
 <body>
-
     <div class="sidebar">
         <div class="logo-details">
             <a href="../index.html?privilage=Staff"><img src="../img/logo.png" class="icon"></a>
@@ -105,58 +105,40 @@
             </li>
         </ul>
     </div>
-
     <main>
-        <div class="text">
-            <h3>Students</h3>
-        </div>
-        <section class="staff">
-            <div class="column">
-                <img class="im" src="../img/img1.jfif">
-                <div class="icon"> <img class="img" src="../img/email1.png"></div>
-                <h3>Ph.D Mohamed Rafat</h3>
-                <p>Developer and Lead Instructor</p>
+        <div class="content">
+            <div class="text">
+                <h3>Student Attendance</h3>
             </div>
-            <div class="column">
-                <img class="im" src="../img/img2.jpg">
-                <div class="icon"> <img class="img" src="../img/email1.png"></div>
-                <h3>Ph.D Rania Mahmoud</h3>
-                <p>Developer and Lead Instructor</p>
-            </div>
-            <div class="column">
-                <img class="im" src="../img/img3.jfif">
-                <div class="icon"> <img class="img" src="../img/email1.png"></div>
-                <h3>Ph.D Hassan Mustafa</h3>
-                <p>Developer and Lead Instructor</p>
-            </div>
-            <div class="column">
-                <img class="im" src="../img/img1.jfif">
-                <div class="icon"> <img class="img" src="../img/email1.png"></div>
-                <h3>Ph.D Mohamed Rafat</h3>
-                <p>Developer and Lead Instructor</p>
-            </div>
-            <div class="column">
-                <img class="im" src="../img/img2.jpg">
-                <div class="icon"> <img class="img" src="../img/email1.png"></div>
-                <h3>Ph.D Rania Mahmoud</h3>
-                <p>Developer and Lead Instructor</p>
-            </div>
-            <div class="column">
-                <img class="im" src="../img/img3.jfif">
-                <div class="icon"> <img class="img" src="../img/email1.png"></div>
-                <h3>Ph.D Hassan Mustafa</h3>
-                <p>Developer and Lead Instructor</p>
-            </div>
-        </section>
+            <table class="attendance-table">
+                <thead>
+                    <tr>
+                        <th>Roll Number <i class='bx bx-chevron-down'></i></th>
+                        <th>Student Name <i class='bx bx-chevron-down'></i></th>
+                        <th>Department <i class='bx bx-chevron-down'></i></th>
+                        <th>Class <i class='bx bx-chevron-down'></i></th>
+                        <th>Present <i class='bx bx-chevron-down'></i></th>
+                        <th>Absent <i class='bx bx-chevron-down'></i></th>
+                        <th>Late <i class='bx bx-chevron-down'></i></th>
+                        <th>Percentage <i class='bx bx-chevron-down'></i></th>
 
+                        <!-- <th>Edit</th> -->
+                    </tr>
+                </thead>
+
+                <tbody id="attendanceTableBody">
+                    <!-- Rows will be dynamically added here -->
+                </tbody>
+            </table>
+            <div class="attendance-summary" id="attendanceSummary">
+                <!-- Summary will be dynamically added here -->
+            </div>
+        </div>
     </main>
+
     <script src="../script/StaffDashboard.js"></script>
-    <script>
-        document.getElementsByClassName("btnJoinInstructor")[0].addEventListener("click", (e) => {
-            e.preventDefault();
-            window.location.href = "join.html";
-        });
-    </script>
+    <script src="../script/add stident att.js"></script>
+    <script src="../script/Get Attendance.js"></script>
 </body>
 
 </html>
