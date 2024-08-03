@@ -14,7 +14,7 @@ body {
     top: 0;
     height: 100%;
     width: 78px;
-    background: #0F2B4E;
+    background: #0f2c4e;
     padding: 6px 14px;
     z-index: 99;
     transition: all 0.5s ease;
@@ -47,7 +47,6 @@ body {
     text-align: center;
     font-weight: 600;
     opacity: 0;
-    text-align: center;
     transition: all 0.5s ease;
     margin-top: 20px;
 }
@@ -292,7 +291,8 @@ p {
 }
 
 .chat,
-.exam-scedule {
+.exam-scedule,
+.scedule {
     width: 25%;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -303,6 +303,7 @@ table {
     margin-top: 10px;
     width: 100%;
     border-collapse: collapse;
+    height: 700px;
 }
 
 thead td {
@@ -310,8 +311,9 @@ thead td {
     color: #333;
 }
 
-.exam-scedule td {
+.scedule td {
     padding: 14px 0px 14px 0px;
+    text-align: center;
 }
 
 table tr {
@@ -347,7 +349,7 @@ table tr {
     flex-wrap: wrap;
 }
 
-.container .exam-scedule {
+.container .scedule {
     flex: 5;
     background: white;
     margin: 0 25px 25px 25px;
@@ -358,3 +360,8 @@ table tr {
 .container .chat {
     background: white;
 }
+
+
+/*.container .scedule tr {
+    height: 70px;
+}*/
