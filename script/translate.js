@@ -26,11 +26,14 @@ const translations = {
     "student": { "en": "+15,000<br>Student", "ar": "١٥,٠٠٠+<br>طالب" },
     "graduated": { "en": "+9,345<br>Graduated", "ar": "٩,٣٤٥+<br>متخرج" },
     "text6": { "en": "It was established accordingto<br> the decisionof the Ministerof<br> Higher Education No. 5701<br>Dated 28-9-2021", "ar": "تم إنشاؤها بموجب قرار وزير التعليم العالي<br> رقم ٥٧٠١ بتاريخ ٢٨-٩-٢٠٢١." },
-    "titel6": { "en": "  Egyptian Germany College", "ar": "الكلية المصرية الالمانية " },
+    "titel6": { "en": " EGC", "ar": "الكلية المصرية الالمانية " },
     "add": { "en": "  Our Address", "ar": "العنوان " },
-    "add1": { "en": " <img src='img/Address-icon.png' alt='' class='icon'> Al-Qasr Al-Ainy Street, Assiut", "ar": "<img src='img/Address-icon.png' alt='' class='icon'>شارع القصر العيني، أسيوط " },
-    "add2": { "en": "<img src='img/Mobile-icon.png' alt='' class='icon' > 088 2350809 ", "ar": "<img src='img/Mobile-icon.png' alt='' class='icon' >٢٣٥٠٨٠٩ ٠٨٨ " },
-    "add3": { "en": " <img src='img/Email-icon.png' alt='' class='icon'>egcasyut@outlook.com ", "ar": " <img src='img/Email-icon.png' alt='' class='icon'>egcasyut@outlook.com " },
+    "add1": { "en": " <img src='circle.png' alt='' class='icon'> Al-Qasr Al-Ainy Street, Assiut", "ar": "<img src='circle.png' alt='' class='icon'>شارع القصر العيني، أسيوط " },
+    "add2": { "en": "<img src='phone-call.png' alt='' class='icon' > 088 2350809 ", "ar": "<img src='phone-call.png' alt='' class='icon' >٢٣٥٠٨٠٩ ٠٨٨ " },
+    "add3": { "en": " <img src='message.png' alt='' class='icon'>egcasyut@outlook.com ", "ar": " <img src='message.png' alt='' class='icon'>egcasyut@outlook.com " },
+    "date": { "en": "January 1, 2024", "ar": "١ يناير , ٢٠٢٤" },
+    "date2": { "en": "March 1, 2024", "ar": "١ مارس , ٢٠٢٤" },
+    "date3": { "en": "June 1, 2024", "ar": "١ يونيو , ٢٠٢٤" },
 };
 
 

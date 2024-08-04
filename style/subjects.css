@@ -1,236 +1,262 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 * {
-    box-sizing: border-box;
-    font-family: "Roboto Condensed", sans-serif;
-}
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif; 
 
-body {
-    background-color: #f0f0f0;
 }
-
+body
+{
+  background-color: #f0f0f0;
+}
 h1 {
     text-align: center;
-    color: #0F2B4E;
+    color: #0F2C4E;
     margin-bottom: 15px;
     font-size: 5vh;
-}
+    font-family: "Libre Baskerville", serif;
 
-.line {
+  }
+  
+  .line {
     background-color: rgb(42, 165, 232);
     height: 5px;
     width: 30vh;
-    margin: 5px auto;
-    /* reduce margin to bring line closer to the divs */
-}
-
-.container {
+    margin: 5px auto; /* reduce margin to bring line closer to the divs */
+  }
+  
+  .container {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-}
-
-.sub-name {
-    color: #0F2B4E;
-    /* set the subtitle color to dark blue */
-    font-size: 4vh;
-    /* set the font size for the subtitle */
-    margin-right: 120vb;
+  }
+  
+  .sub-name {
+    color: #0F2C4E; /* set the subtitle color to dark blue */
+    font-size: 4vh; /* set the font size for the subtitle */
+    margin-right: 115vh;
     margin-bottom: 20px;
-}
+    font-family: "Libre Baskerville", serif;
 
-.connected-container {
+  }
+  
+  .connected-container {
     display: flex;
     flex-direction: row;
     background-color: #fff;
-    border: 2px solid #0F2B4E;
+    border: 2px solid #0F2C4E;
     border-radius: 10px;
     padding: 0;
     overflow: hidden;
     height: 200px;
     margin: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.picture {
-    width: 300px;
-    /* set the picture width */
-    height: 250px;
-    /* set the picture height */
-    object-fit: cover;
-    /* cover the entire area with the picture */
-    padding: 0;
-    /* remove padding from the picture */
-    border-radius: 0;
-    /* remove border radius from the top, right, and bottom */
-    margin: 0;
-    /* remove margin from the picture */
-}
-
-.div-container {
+    box-shadow: 0 0 10px 2px #0F2B4E;
+  }
+  
+  .picture {
+    width: 300px; /* set the picture width */
+    height: 250px; /* set the picture height */
+    object-fit: cover; /* cover the entire area with the picture */
+    padding: 0; /* remove padding from the picture */
+    border-radius: 0; /* remove border radius from the top, right, and bottom */
+    margin: 0; /* remove margin from the picture */
+  }
+  
+  .div-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex: 1;
-}
-
-.div-container a {
+  }
+  
+  .div-container a {
     text-decoration: none;
     color: inherit;
-}
-
-.div-container a:hover {
+  }
+  
+  .div-container a:hover {
     text-decoration: none;
     color: inherit;
-}
-
-.div1,
-.div2,
-.div3,
-.div4 {
+  }
+  
+  .div1, .div2, .div3, .div4 {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 250px;
     height: 200px;
-    background-color: #c5ddf9;
+    background-color: #fff;
     border: none;
     padding: 10px;
-    margin: 0;
-    /* remove margin between divs */
-    border-radius: 0;
-    /* remove border radius from individual divs */
+    margin: 0; /* remove margin between divs */
+    border-radius: 0; /* remove border radius from individual divs */
     font-size: 3vh;
     transition: background-color 0.3s, color 0.3s;
-    color: #0F2B4E;
+    color: #0F2C4E;
     transform: scale(1);
-}
-
-.div1:hover,
-.div2:hover,
-.div3:hover,
-.div4:hover {
-    background-color: #0F2B4E;
-    /* change the background color on hover */
-    color: #fff;
-    /* change the text color on hover */
-    transform: scale(1.08);
-    /* scale up on hover */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-
-/* Media Queries */
-
-
-/* For screens smaller than 768px (tablets and mobiles) */
-
-@media only screen and (max-width: 768px) {
+    
+  }
+  
+  .div1:hover, .div2:hover, .div3:hover, .div4:hover {
+    background-color: #0F2C4E; /* change the background color on hover */
+    color: #fff; /* change the text color on hover */
+    transform: scale(1.08); /* scale up on hover */
+  box-shadow: 0 0 10px #0F2B4E;
+  }
+  
+  /* Media Queries */
+  
+  /* For screens smaller than 768px (tablets and mobiles) */
+  @media only screen and (max-width: 768px) {
     .connected-container {
-        flex-direction: column;
-        height: auto;
+      flex-direction: column;
+      height: auto;
     }
     .picture {
-        width: 100%;
-        height: 150px;
+      width: 100%;
+      height: 150px;
     }
-    .div1,
-    .div2,
-    .div3,
-    .div4 {
-        width: 100%;
-        height: 150px;
-        margin-bottom: 20px;
+    .div1, .div2, .div3, .div4 {
+      width: 100%;
+      height: 150px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* For screens smaller than 480px (mobiles) */
+  @media only screen and (max-width: 480px) {
+    .connected-container {
+      padding: 10px;
+    }
+    .picture {
+      height: 100px;
+    }
+    .div1, .div2, .div3, .div4 {
+      height: 100px;
+      font-size: 2vh;
+    }
+  }
+  
+  /* For screens smaller than 320px (small mobiles) */
+  @media only screen and (max-width: 320px) {
+    .connected-container {
+      padding: 5px;
+    }
+    .picture {
+      height: 80px;
+    }
+    .div1, .div2, .div3, .div4 {
+      height: 80px;
+      font-size: 1.5vh;
+    }
+  }
+
+
+
+
+  @media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 3vh;
+    }
+    .line {
+        width: 20vh;
+    }
+    .sub-name {
+        font-size: 3vh;
     }
 }
-
 
 /* For screens smaller than 480px (mobiles) */
-
 @media only screen and (max-width: 480px) {
-    .connected-container {
-        padding: 10px;
+    h1 {
+        font-size: 2vh;
     }
-    .picture {
-        height: 100px;
+    .line {
+        width: 15vh;
     }
-    .div1,
-    .div2,
-    .div3,
-    .div4 {
-        height: 100px;
+    .sub-name {
         font-size: 2vh;
     }
 }
 
-
 /* For screens smaller than 320px (small mobiles) */
-
 @media only screen and (max-width: 320px) {
-    .connected-container {
-        padding: 5px;
+    h1 {
+        font-size: 1.5vh;
     }
-    .picture {
-        height: 80px;
+    .line {
+        width: 10vh;
     }
-    .div1,
-    .div2,
-    .div3,
-    .div4 {
-        height: 80px;
+    .sub-name {
         font-size: 1.5vh;
     }
 }
 
-.sidebar {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  .sidebar {
     position: fixed;
     left: 0;
     top: 0;
     height: 100%;
     width: 78px;
-    background: #0F2B4E;
+    background: #0f2c4e;
     padding: 6px 14px;
     z-index: 99;
     transition: all 0.5s ease;
     margin: 0;
     padding: 0;
-}
-
-.sidebar.open {
+  }
+  .sidebar.open {
     width: 250px;
-}
-
-.sidebar .logo-details {
+  }
+  .sidebar .logo-details {
     height: 60px;
     display: flex;
     align-items: center;
     position: relative;
-}
-
-.sidebar .logo-details .icon {
+  }
+  .sidebar .logo-details .icon {
     opacity: 0;
     transition: all 0.5s ease;
     width: 45px;
     height: 65px;
     margin-top: 20px;
-}
-
-.sidebar .logo-details .logo_name {
+  }
+  .sidebar .logo-details .logo_name {
     color: #fff;
     font-size: 20px;
     font-weight: 600;
     opacity: 0;
-    text-align: center;
-    transition: all 0.5s ease;
-    margin-top: 20px;
-}
-
-.sidebar.open .logo-details .icon,
-.sidebar.open .logo-details .logo_name {
+    transition: all 0.5s ease;  margin-top: 20px;
+  
+  }
+  .sidebar.open .logo-details .icon,
+  .sidebar.open .logo-details .logo_name {
     opacity: 1;
-}
-
-.sidebar .logo-details #btn {
+  }
+  .sidebar .logo-details #btn {
     position: absolute;
     top: 50%;
     right: 0;
@@ -243,37 +269,32 @@ h1 {
     transition: all 0.5s ease;
     margin-right: 15px;
     margin-top: 20px;
-}
-
-.sidebar.open .logo-details #btn {
+  }
+  .sidebar.open .logo-details #btn {
     text-align: right;
-}
-
-.sidebar i {
+  }
+  .sidebar i {
     color: #fff;
     height: 60px;
     min-width: 50px;
     font-size: 28px;
     text-align: center;
     line-height: 60px;
-}
-
-.sidebar .nav-list {
+  }
+  .sidebar .nav-list {
     margin-top: 30px;
     height: 100%;
     margin-left: 10px;
     padding: 0;
-}
-
-.sidebar li {
+  }
+  .sidebar li {
     position: relative;
     margin: 8px 0;
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-.sidebar li .tooltip {
+  }
+  .sidebar li .tooltip {
     position: absolute;
     top: -20px;
     left: calc(100% + 15px);
@@ -288,125 +309,108 @@ h1 {
     white-space: nowrap;
     pointer-events: none;
     transition: 0s;
-}
-
-.sidebar li:hover .tooltip {
+  }
+  .sidebar li:hover .tooltip {
     opacity: 1;
     pointer-events: auto;
     transition: all 0.4s ease;
     top: 50%;
     transform: translateY(-50%);
-}
-
-.sidebar.open li .tooltip {
+  }
+  .sidebar.open li .tooltip {
     display: none;
-}
-
-.sidebar li a {
+  }
+  .sidebar li a {
     display: flex;
     height: 100%;
-    width: 95%;
+    width: 82%;
     border-radius: 12px;
     align-items: center;
     text-decoration: none;
     transition: all 0.4s ease;
-    background: #0F2B4E;
-}
-
-.sidebar li a:hover {
+    background: #0f2c4e;
+  }
+  .sidebar li a:hover {
     background: #fff;
-}
-
-.sidebar li a .links_name {
+  }
+  .sidebar li a .links_name {
     color: #fff;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 400;
     white-space: nowrap;
     opacity: 0;
     pointer-events: none;
     transition: 0.4s;
-}
-
-.sidebar.open li a .links_name {
+  }
+  .sidebar.open li a .links_name {
     opacity: 1;
     pointer-events: auto;
-}
-
-.sidebar li a:hover .links_name,
-.sidebar li a:hover i {
+  }
+  .sidebar li a:hover .links_name,
+  .sidebar li a:hover i {
     transition: all 0.5s ease;
-    color: #0F2B4E;
-}
-
-.sidebar li i {
+    color: #0f2c4e;
+  }
+  .sidebar li i {
     height: 50px;
     line-height: 50px;
     font-size: 18px;
     border-radius: 12px;
     margin-left: 2.5px;
-}
-
-.sidebar li.profile {
+  }
+  .sidebar li.profile {
     position: fixed;
     height: 60px;
     width: 78px;
     left: 0;
     bottom: -8px;
     padding: 10px 14px;
-    background: #0F2B4E;
+    background: #0f2c4e;
     transition: all 0.5s ease;
     overflow: hidden;
-}
-
-.sidebar.open li.profile {
+  }
+  .sidebar.open li.profile {
     width: 250px;
-}
-
-.sidebar li .profile-details {
+  }
+  .sidebar li .profile-details {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
-}
-
-.sidebar li img {
+  }
+  .sidebar li img {
     height: 45px;
     width: 45px;
     object-fit: cover;
     border-radius: 6px;
     margin-right: 10px;
-}
-
-.sidebar li.profile .name,
-.sidebar li.profile .email {
+  }
+  .sidebar li.profile .name,
+  .sidebar li.profile .email {
     font-size: 15px;
     font-weight: 400;
     color: #fff;
     white-space: nowrap;
-}
-
-.sidebar li.profile .email {
+  }
+  .sidebar li.profile .email {
     font-size: 12px;
-}
-
-.sidebar .profile #log_out {
+  }
+  .sidebar .profile #log_out {
     position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    background: #0F2B4E;
+    background: #0f2c4e;
     width: 100%;
     height: 60px;
     line-height: 60px;
     border-radius: 0px;
     transition: all 0.5s ease;
-}
-
-.sidebar.open .profile #log_out {
+  }
+  .sidebar.open .profile #log_out {
     width: 50px;
     background: none;
-}
-
-.home-section {
+  }
+  .home-section {
     position: relative;
     min-height: 100vh;
     top: 0;
@@ -414,9 +418,11 @@ h1 {
     width: calc(100% - 78px);
     transition: all 0.5s ease;
     z-index: 2;
-}
-
-.sidebar.open~.home-section {
+  }
+  .sidebar.open ~ .home-section {
     left: 250px;
     width: calc(100% - 100px);
-}
+  }
+  
+
+
