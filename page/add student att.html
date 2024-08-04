@@ -31,46 +31,11 @@
                 <span class="tooltip">Dashboard</span>
             </li>
             <li>
-                <a href="staff-announcements.html">
-                    <i class='bx bx-bell'></i>
-                    <span class="links_name">Announcements</span>
-                </a>
-                <span class="tooltip">Announcements</span>
-            </li>
-            <li>
                 <a href="course.html">
                     <i class='bx bx-book-bookmark'></i>
                     <span class="links_name">Courses</span>
                 </a>
                 <span class="tooltip">Courses</span>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-task'></i>
-                    <span class="links_name">Assignments</span>
-                </a>
-                <span class="tooltip">Assignments</span>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-file'></i>
-                    <span class="links_name">Quizzes</span>
-                </a>
-                <span class="tooltip">Quizzes</span>
-            </li>
-            <li>
-                <a href="staff.html">
-                    <i class='bx bx-mail-send'></i>
-                    <span class="links_name">Staff</span>
-                </a>
-                <span class="tooltip">Staff</span>
-            </li>
-            <li>
-                <a href="students.html">
-                    <i class='bx bx-user'></i>
-                    <span class="links_name">Students</span>
-                </a>
-                <span class="tooltip">Students</span>
             </li>
             <li>
                 <a href="Get Attendance.html">
@@ -115,25 +80,25 @@
             <div id="formSection">
                 <h2>Mark Attendance</h2>
                 <button id="addStudentButton" onclick="showAddStudentForm()">
-                Add Student
-            </button>
+                    Add Student
+                </button>
                 <button id="addClassButton" onclick="showAddClassForm()">
-                Add Class
-            </button>
+                    Add Class
+                </button>
                 <button id="addDepartmentButton" onclick="showAddDepartmentForm()">
-            Add Department
-            </button>
+                    Add Department
+                </button>
 
 
                 <label for="departmentSelector">Department:</label>
                 <select id="departmentSelector" required onchange="showStudentsList()">
-                <!-- Populate classes dynamically -->
-            </select>
+                    <!-- Populate classes dynamically -->
+                </select>
 
                 <label for="classSelector">Class:</label>
                 <select id="classSelector" required onchange="showStudentsList()">
-                <!-- Populate classes dynamically -->
-            </select>
+                    <!-- Populate classes dynamically -->
+                </select>
                 <ul id="studentsList">
                     <!-- Populate students dynamically 
                     based on the selected class -->
@@ -160,8 +125,8 @@
                 </div>
 
                 <button class="submit_att" onclick="submitAttendance()">
-                Submit Attendance
-            </button>
+                    Submit Attendance
+                </button>
 
                 <!-- Result Section -->
                 <div id="resultSection" style="display: none;">
@@ -202,38 +167,38 @@
             <h2>Add Student</h2>
             <!-- Add Student Form Content -->
             <label for="newStudentName">
-            Student Name:
-        </label>
+                Student Name:
+            </label>
             <input type="text" id="newStudentName" required>
             <label for="newStudentRoll">
-            Roll Number:
-        </label>
+                Roll Number:
+            </label>
             <input type="text" id="newStudentRoll" required>
             <!-- Add more fields as needed -->
 
             <button onclick="addStudent()">
-            submit
-        </button>
+                submit
+            </button>
             <button onclick="closePopup()">
-            Cancel
-        </button>
+                Cancel
+            </button>
         </div>
 
         <div id="addClassPopup" class="popup">
             <h2>Add Class</h2>
             <!-- Add Class Form Content -->
             <label for="newClassName">
-            Class Name:
-        </label>
+                Class Name:
+            </label>
             <input type="text" id="newClassName" required>
             <!-- Add more fields as needed -->
 
             <button onclick="addClass()">
-            Submit
-        </button>
+                Submit
+            </button>
             <button onclick="closePopup()">
-            Cancel
-        </button>
+                Cancel
+            </button>
         </div>
 
 
@@ -241,17 +206,17 @@
             <h2>Add Department</h2>
             <!-- Add Class Form Content -->
             <label for="newDepartmentName">
-            Department Name:
-        </label>
+                Department Name:
+            </label>
             <input type="text" id="newDepartmentName" required>
             <!-- Add more fields as needed -->
 
             <button onclick=" addDepartment()">
-            Submit
-        </button>
+                Submit
+            </button>
             <button onclick="closePopup()">
-            Cancel
-        </button>
+                Cancel
+            </button>
         </div>
     </main>
 

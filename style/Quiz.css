@@ -16,7 +16,7 @@ body {
     margin: 4% auto 5% auto;
     max-width: 45%;
     box-shadow: 0 10px 10px rgba(5, 5, 5, 0.1);
-    padding: 40px;
+    padding: 30px;
     border-radius: 15px;
     animation: fadeInRight 2s ease;
 }

@@ -35,11 +35,12 @@ body {
 
 .name_c {
     padding: 20px;
-    margin-right: 425px;
-    color: #0F2B4E;
+    left: 15vw;
+    color: #0F2C4E;
     font-size: 25px;
     font-weight: bold;
     margin-top: -5px;
+    position: absolute;
 }
 
 .ul li .a:hover {
@@ -77,7 +78,7 @@ a {
 
 
 /* body {
-  font-family: sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
 } */
 
 .container {

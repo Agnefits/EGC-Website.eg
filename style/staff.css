@@ -1,7 +1,89 @@
+body {
+    background: #f0f1f6;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.ul {
+    list-style-type: none;
+    overflow: hidden;
+    /* background-color:#0F2C4E; */
+    /* 
+    font-family: "Roboto Condensed", sans-serif; */
+    /* margin-top:60px; */
+    margin-left: -10px;
+    margin-right: 10px;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}
+
+.ul li {
+    float: right;
+    padding-right: 70px;
+}
+
+
+/* h1{color:#0F2C4E;margin-top: 100px;} */
+
+.ul li .a {
+    display: block;
+    color: #0F2C4E;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.name_c {
+    padding: 20px;
+    left: 15vw;
+    color: #0F2C4E;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -5px;
+    position: absolute;
+}
+
+.ul li .a:hover {
+    /* box-shadow:1px 1px 20px; */
+    border-bottom: 5px rgb(150, 146, 146) solid;
+}
+
+.join .a {
+    background: #0F2C4E;
+    text-decoration: none;
+}
+
+
+/* .nav{position: fixed;} */
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #0F2C4E;
+    font-size: 20px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.log img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: -5px 5px 10px gray;
+    margin-right: 40px;
+    position: fixed;
+}
+
 .staff {
     width: 80%;
     margin: auto;
     text-align: center;
+    padding-top: 200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -61,19 +143,4 @@ main .icon {
 h3 {
     font-weight: 600;
     margin-top: 30px;
-}
-
-.btnJoinInstructor {
-    background: #0F2B4E;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    border: none;
-    right: 10px;
-    top: 15px;
-    position: absolute;
 }

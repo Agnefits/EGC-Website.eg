@@ -13,72 +13,40 @@
 <body>
     <div class="nav">
         <ul class="ul">
-            <li><a href="#home" class="a">Students </a></li>
-            <li><a href="../page/staff.html" class="a">Staff</a></li>
+            <li><a href="#home" class="a">Students</a></li>
+            <li><a href="../page/staff.html" class="a">Teaching Assistants</a></li>
             <li><a href="../page/coursework.html" class="a">CourseWork</a></li>
             <li><a href="../page/nav.html" class="a">Home</a></li>
-            <li class="name_c">Course One</li>
+            <li class="name_c a">Course One</li>
         </ul>
         <div class="log"><img src="../img/course_img.png"></div>
     </div>
 
-    <div class="dropdown">
-        <button class="dropdown-button">Add +</button>
-        <div class="dropdown-content">
-            <a href="../page/add quiz.html">Add Quiz</a>
-            <a href="../page/assignment.html">Upload Assignment</a>
+    <!-- Course Section -->
+    <section class="course-section">
+        <div class="course-container">
+            <div class="course-row">
+                <div class="course-item" data-link="../page/courseAssignments.html">
+                    <img src="../img/assignments.png" alt="Assignments" class="course-image">
+                    <div class="overlay">
+                        <p class="overlay-text">Assignments</p>
+                    </div>
+                </div>
+                <div class="course-item" data-link="../page/courseMaterials.html">
+                    <img src="../img/materials.png" alt="Materials" class="course-image">
+                    <div class="overlay">
+                        <p class="overlay-text">Materials</p>
+                    </div>
+                </div>
+                <div class="course-item" data-link="../page/courseQuizes.html">
+                    <img src="../img/quizes.png" alt="Quizes" class="course-image">
+                    <div class="overlay">
+                        <p class="overlay-text">Quizes</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="card">
-        <div class="card-left">
-            <div class="menu-icon">&#x2022;&#x2022;&#x2022;</div>
-            <span>19 / 5 / 2024</span>
-        </div>
-        <div class="card-right">
-            <span>Assignment 1</span>
-            <!-- <button class="icon-button"> -->
-            <img class="icon" src="../img/file_icon.png" alt="icon">
-            <!-- </button> -->
-        </div>
-        <div class="dropdown-content2">
-            <a href="../page/assignment.html" class="edit">Edit</a>
-            <a href="#" class="delete">Delete</a>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-left">
-            <div class="menu-icon">&#x2022;&#x2022;&#x2022;</div>
-            <span>20 / 5 / 2024</span>
-        </div>
-        <div class="card-right">
-            <span>Quiz 1</span>
-            <!-- <button class="icon-button"> -->
-            <img class="icon" src="../img/file_icon.png" alt="icon">
-            <!-- </button> -->
-        </div>
-        <div class="dropdown-content2">
-            <a href="../page/add quiz.html" class="edit">Edit</a>
-            <a href="#" class="delete">Delete</a>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-left">
-            <div class="menu-icon">&#x2022;&#x2022;&#x2022;</div>
-            <span>21 / 5 / 2024</span>
-        </div>
-        <div class="card-right">
-            <span>Quiz 2</span>
-            <!-- <button class="icon-button"> -->
-            <img class="icon" src="../img/file_icon.png" alt="icon">
-            <!-- </button> -->
-        </div>
-        <div class="dropdown-content2">
-            <a href="../page/add quiz.html" class="edit">Edit</a>
-            <a href="#" class="delete">Delete</a>
-        </div>
-    </div>
+    </section>
 
     <script src="../script/coursework.js"></script>
 </body>

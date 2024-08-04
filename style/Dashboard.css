@@ -88,3 +88,6 @@ h2 {
 .card-hover:hover .card-title {
     opacity: 1;
 }
+.row-container{
+    margin-left: 2vw;
+}
