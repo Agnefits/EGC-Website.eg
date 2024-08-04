@@ -1,7 +1,6 @@
             @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
             * {
                 box-sizing: border-box;
-                font-family: "Roboto Condensed", sans-serif;
             }
             
             body {
@@ -31,6 +30,7 @@
                 display: flex;
                 align-items: center;
                 position: relative;
+                font-family:"Roboto Condensed", sans-serif;
             }
             
             .sidebar .logo-details .icon {
@@ -97,6 +97,7 @@
                 list-style: none;
                 margin: 0;
                 padding: 0;
+                font-family: "Roboto Condensed", sans-serif;
             }
             
             .sidebar li .tooltip {
@@ -253,6 +254,7 @@
                 color: #11101d;
                 font-size: 25px;
                 font-weight: 500px;
+                font-family:"Libre Baskerville", serif;
             }
             
             @media (max-width: 420px) {
@@ -265,7 +267,10 @@
             h4 {
                 color: #0F2B4E;
             }
-            
+            p{
+                font-family: "Roboto Condensed", sans-serif;
+            }
+
             .main-content {
                 margin-left: 15%;
                 margin-right: 15%;
@@ -302,12 +307,13 @@
                 color: white;
                 text-decoration: none;
                 font-size: 18px;
-                font-weight: 500;
+                font-weight: 200;
                 padding: 8px 15px;
                 border-radius: 5px;
                 cursor: pointer;
                 border: none;
                 margin: 10px 0px;
+                font-family:"Roboto Condensed", sans-serif;
             }
             
             .posts .post {

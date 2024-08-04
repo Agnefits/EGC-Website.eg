@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 * {
     box-sizing: border-box;
-    font-family: "Roboto Condensed", sans-serif;
 }
 
 body {
@@ -31,6 +30,7 @@ body {
     display: flex;
     align-items: center;
     position: relative;
+    font-family:"Roboto Condensed", sans-serif;
 }
 
 .sidebar .logo-details .icon {
@@ -97,6 +97,7 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .sidebar li .tooltip {
@@ -253,6 +254,8 @@ main .text {
     color: #11101d;
     font-size: 25px;
     font-weight: 500px;
+    font-family:"Libre Baskerville", serif;
+
 }
 
 @media (max-width: 420px) {
@@ -268,9 +271,8 @@ main {
 .student-quiz-container {
     margin: 20px 50px;
     padding: 20px;
-    border: 1px black solid;
     border-radius: 40px;
-    box-shadow: 2px 2px 5px black;
+    box-shadow: 2px 2px 5px rgb(48, 47, 47);
     position: relative;
     min-width: 650px;
 }
@@ -297,6 +299,7 @@ main {
 
 .student-quiz-date {
     font-size: 12px;
+    font-family:"Roboto Condensed", sans-serif;
 }
 
 .student-quiz-details {
@@ -314,13 +317,13 @@ main {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-family:"Roboto Condensed", sans-serif;
 }
 
 .btn-preview-quiz {
     padding: 10px 20px;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: dodgerblue;
+    font-size: 17px;
+    background-color: #0F2B4E;
     color: white;
     border: none;
     border-radius: 15px;
@@ -328,4 +331,5 @@ main {
     position: absolute;
     right: 25px;
     bottom: 20px;
+    font-family:"Roboto Condensed", sans-serif;
 }

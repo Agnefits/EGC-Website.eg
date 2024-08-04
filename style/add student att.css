@@ -25,10 +25,15 @@
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 h2 {
     color: #333;
+    font-family:"Libre Baskerville", serif;
+}
+h3{
+    font-family:"Libre Baskerville", serif;
 }
 
 label {

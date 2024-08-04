@@ -18,6 +18,10 @@
     box-sizing: border-box;
     transition: 0.5s;
     position: relative;
+    font-family: "Roboto Condensed", sans-serif;
+}
+h3{
+    font-family:"Libre Baskerville", serif;
 }
 
 .column:hover {

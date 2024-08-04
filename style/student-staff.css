@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 * {
     box-sizing: border-box;
-    font-family: "Roboto Condensed", sans-serif;
 }
 
 body {
@@ -31,6 +30,7 @@ body {
     display: flex;
     align-items: center;
     position: relative;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .sidebar .logo-details .icon {
@@ -97,6 +97,7 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .sidebar li .tooltip {
@@ -253,6 +254,7 @@ main .text {
     color: #11101d;
     font-size: 25px;
     font-weight: 500px;
+    font-family:"Libre Baskerville", serif;
 }
 
 @media (max-width: 420px) {
@@ -265,11 +267,12 @@ main .text {
     width: 90%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
-    margin-left: 100px;
+    padding-top: 80px;
+    margin-left: 80px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .column {
@@ -320,6 +323,7 @@ main .text {
 .staff h3 {
     font-weight: 600;
     margin-top: 10px;
+    font-family:"Libre Baskerville", serif;
 }
 
 p {
