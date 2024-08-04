@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="style/department.css">
     <link rel="stylesheet" href="style/welcome.css">
     <link rel="stylesheet" href="style/uni.css">
-    <link rel="stylesheet" href="style/style.css">
+    <!-- <link rel="stylesheet" href="style/style.css"> -->
+    <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/about.css">
     <link rel="stylesheet" href="style/university web.css">
     <link rel="stylesheet" href="style/dean.css">
@@ -40,7 +41,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Dancing+Script:wght@400..700&family=Gupter:wght@400;500;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-
 
 </head>
 
@@ -172,32 +172,35 @@
         <section class="d2">
             <h2 class="section-header" id="news-section" data-translate="titel4" data-lang="en">Latest <span class="change_title">News</span></h2>
 
-            <div class="cards">
+            <div class="card-container">
                 <div class="card">
-                    <img src="img/new2.png" alt="Avatar" style="width:100%">
+                    <img class="card-image" src="img/new1.png" alt="Avatar">
                     <div class="container">
+                        <p class="card-date" data-translate="date" data-lang="en">January 1, 2024</p>
                         <p class="iden1" data-translate="text3" data-lang="en">The sixth season of the Geniuses program, the match between Misr Technological University and Tanta University</p>
                     </div>
                 </div>
 
                 <div class="card">
-                    <img src="img/new.png" alt="Avatar" style="width:100%">
+                    <img class="card-image" src="img/new2.png" alt="Avatar">
                     <div class="container">
+                        <p class="card-date" data-translate="date2" data-lang="en">March 1, 2024</p>
                         <p class="iden1" data-translate="text4" data-lang="en">Professor Dr. Ahmad Hosni Al-Haywy and his talk about the Technologists Syndicate Law
                         </p>
                     </div>
                 </div>
 
                 <div class="card">
-                    <img src="img/new2.png" alt="Avatar" style="width:100%">
+                    <img class="card-image" src="img/NEW4.png" alt="Avatar">
                     <div class="container">
+                        <p class="card-date" data-translate="date3" data-lang="en">June 1, 2024</p>
                         <p class="iden1" data-translate="text3" data-lang="en">The sixth season of the Geniuses program, the match between Misr Technological University and Tanta University</p>
                     </div>
                 </div>
 
 
             </div>
-            <button id="more_news" data-translate="read" data-lang="en">Read More</button>
+            <a href="page/news.html" id="more_news" data-translate="read" data-lang="en">Read More</a>
         </section>
 
 
@@ -221,24 +224,56 @@
         </section>
     </section>
 
+
+
+
     <!-- footer -->
 
-    <footer>
-        <div class="Head-Footer">
-            <img src="img/logo.png" class="logo">
-            <h1 id="footer-section" data-translate="titel6" data-lang="en"> Egyptian Germany College</h1>
-        </div>
-        <p class="paragraph" data-translate="text6" data-lang="en">It was established according <br>to the decisionof the Minister<br> of Higher Education No. 5701 <br>Dated 28-9-2021</p>
-        <div class="social">
-            <a href=""><img src="img/facebook-icon.png" alt=""></a>
-            <a href=""><img src="img/Whats-icon.png" alt=""></a>
-            <a href=""><img src="img/Twiter-icon.png" alt=""></a>
-        </div>
-        <div class="About">
-            <h1><strong data-translate="add" data-lang="en" class="our">Our Address</strong></h1>
-            <span data-translate="add1" data-lang="en" class="add"><img src="img/Address-icon.png" alt="" class="icon">Al-Qasr Al-Ainy Street, Assiut</span>
-            <span data-translate="add2" data-lang="en" class="add"><img src="img/Mobile-icon.png" alt="" class="icon" >088 2350809</span>
-            <span data-translate="add3" data-lang="en" class="add"><img src="img/Email-icon.png" alt="" class="icon">egcasyut@outlook.com</span>
+    <footer id="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="left-column">
+                    <div class="Head-Footer">
+                        <img src="img/LOGO-removebg-preview (1).png" class="logo">
+                        <h1 data-translate="titel6" data-lang="en">EGC</h1>
+                    </div>
+                    <p class="paragraphh" data-translate="text6" data-lang="en">It was established according <br>to the decisionof the Minister<br> of Higher Education No. 5701 <br>Dated 28-9-2021</p>
+                </div>
+                <div class="map-container">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3549.103285393465!2d31.175473824031524!3d27.184490376486337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14450baeba73990d%3A0x7a66b40fe27089fd!2z2KfZhNmD2YTZitipINin2YTZhdi12LHZitipINin2YTYp9mE2YXYp9mG2YrYqSDZhNmE2KrZg9mG2YjZhNmI2KzZitin4oCTINij2LPZitmA2YDZgNmA2YDZgNmA2YjYtw!5e0!3m2!1sar!2seg!4v1722637355647!5m2!1sar!2seg"
+                            width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="right-column">
+                    <h2><strong data-translate="add" data-lang="en" class="our">Our Address</strong></h2>
+                    <ul>
+                        <li>
+                            <span data-translate="add1" data-lang="en" class="add">
+                    <img src="img/circle.png" alt="" class="icon">
+                    Al-Qasr Al-Ainy Street, Assiut
+                  </span>
+                        </li>
+                        <li>
+                            <span data-translate="add2" data-lang="en" class="add">
+                    <img src="img/phone-call.png" alt="" class="icon">
+                    088 2350809
+                  </span>
+                        </li>
+                        <li>
+                            <span data-translate="add3" data-lang="en" class="add">
+                    <img src="img/message.png" alt="" class="icon">
+                    egcasyut@outlook.com
+                  </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social">
+                <a href="#" target="_blank"><i class="fa fa-twitter"><img src="img/facebook (1).png" alt="error" width="50px" height="50px"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-facebook"><img src="img/whatsapp (1).png" alt="error" width="50px" height="50px"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-google-plus"><img src="img/twitter-logo.png" alt="error" width="50px" height="50px"></i></a>
+            </div>
         </div>
     </footer>
     <script src="script/translate.js"></script>

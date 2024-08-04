@@ -84,11 +84,12 @@ footer {
     margin-top: -30px;
 }
 
-.social img {
+
+/*.social img {
     width: 5vw;
     min-width: 45px;
-    /* height: 9vh; */
-}
+     height: 9vh; 
+}*/
 
 @media only screen and (max-width: 550px) {
     footer {
@@ -126,11 +127,11 @@ footer {
         width: 10vw;
         height: 10vh;
     }
-    .icon {
+    /*.icon {
         width: 4vw;
         height: 5vh;
         margin-right: 10px;
-    }
+    }*/
     .About {
         grid-column: 1;
         grid-row: 3;
