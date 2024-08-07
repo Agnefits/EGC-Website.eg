@@ -1,16 +1,16 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Attendance Portal</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Show Students</title>
     <link rel="icon" href="../img/logo.png" sizes="48x32">
-    <link rel="stylesheet" href="../style/admin attendance.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../style/ShowStudents.css">
     <link rel="stylesheet" href="../style/adminDashboard.css">
     <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
-
 </head>
 
 <body>
@@ -69,40 +69,48 @@
             </li>
         </ul>
     </div>
+
     <main>
-        <div class="container">
+        <div class="content">
             <div class="text">
-                <h3>Show Student Attendance</h3>
+                <h3>Show Students</h3>
             </div>
-            <div id="formSection">
 
-                <h1>Attendance</h1>
-                <label for="department">Department:</label>
-                <select id="department" name="department">
-              <option value="mechanics">Mechanics</option>
-              <option value="electronics">Electronics</option>
-              <option value="computers">Computers</option>
-            </select>
-
-                <label for="class">Class:</label>
-                <select id="class" name="class">
-              <!-- The classes will be dynamically generated based on the selected department -->
-            </select>
-
-                <ul id="students-list">
-                    <!-- The students will be dynamically generated based on the selected class and department -->
-                </ul>
-
-
-                <p id="Summaryatt"></p>
-
-
-
+            <button class="add-btn" onclick="">Add student</button>
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search by Student Name or Department..." />
+                <button class="search-btn" onclick="searchStudents()">Search</button>
             </div>
+
+            <table class="students-table">
+                <thead>
+                    <tr>
+                        <th>Roll Number <i class='bx bx-chevron-down'></i></th>
+                        <th>Student Name <i class='bx bx-chevron-down'></i></th>
+                        <th>Department <i class='bx bx-chevron-down'></i></th>
+                        <th>Year Level <i class='bx bx-chevron-down'></i></th>
+                        <th>Email <i class='bx bx-chevron-down'></i></th>
+                        <th>Phone Number <i class='bx bx-chevron-down'></i></th>
+                        <th>Username <i class='bx bx-chevron-down'></i></th>
+                        <th>Details <i class='bx bx-chevron-down'></i></th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentsTableBody">
+                    <!-- Rows will be dynamically added here -->
+                </tbody>
+            </table>
         </div>
     </main>
-    <script src="../script/admin attendance.js"></script>
+    <script src="../script/ShowStudents.js"></script>
     <script src="../script/AdminDashboard.js"></script>
+    <script>
+        document.getElementsByClassName("add-btn")[0].addEventListener("click", (e) => {
+            e.preventDefault();
+            window.location.href = "Add_Student.html";
+        });
+    </script>
 </body>
 
 </html>

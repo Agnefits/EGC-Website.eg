@@ -3,7 +3,7 @@ body {
     /*background: linear-gradient(to left, rgb(3, 3, 203), rgb(66, 84, 249), rgb(3, 161, 247));*/
 }
 
-.container {
+#formSection {
     background-color: #fff;
     /* White background for form */
     border-radius: 15px;
