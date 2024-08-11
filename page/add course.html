@@ -11,15 +11,14 @@
 
 <body>
     <main>
-        <div class="frame" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <form id="addcourse">
             <h2>Add a new course</h2>
-        
-            <div class="form-group">
-                <input type="file" id="fileInput" accept="image/*" style="display: none;">
-                <label for="fileInput">courseImage:</label>
-                <div id="imageContainer"></div>
-               
+            <div class="picture-course">
+                <img id="picturecourse" src="../img/images.jpeg" alt="Course Picture">
+                <label for="course_image" class="course_label">Choose Image</label>
+                <input type="file" id="course_image" name="course_image" class="course-input">
             </div>
+           
             <div class="form-group">
                 <label for="courseName">Course name:</label>
                 <input type="text" id="courseName" placeholder="Enter the course name">
@@ -64,6 +63,7 @@
             <button onclick="addCourse()">Add Course</button>
         
         </div>
+    </form>
     </main>
     <script src="../script/add course.js"></script>
 </body>

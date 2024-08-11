@@ -2,32 +2,26 @@ body {
     background: #f0f1f6;
     font-family: "Roboto Condensed", sans-serif;
 }
-
 .ul {
     list-style-type: none;
     overflow: hidden;
     /* background-color:#0F2C4E; */
-    /* 
-    font-family: "Roboto Condensed", sans-serif; */
-    /* margin-top:60px; */
+    font-family: "Roboto Condensed", sans-serif;
+    margin-top: 13px;
     margin-left: -10px;
     margin-right: 10px;
     z-index: 100;
     position: fixed;
     width: 100%;
 }
-
 .ul li {
     float: right;
     padding-right: 70px;
 }
-
-
 /* h1{color:#0F2C4E;margin-top: 100px;} */
-
 .ul li .a {
     display: block;
-    color: #0F2C4E;
+    color: #0F2B4E;
     font-size: 20px;
     padding: 10px;
     font-weight: bold;
@@ -36,17 +30,38 @@ body {
 
 .name_c {
     padding: 20px;
-    left: 15vw;
+    left: 70px;
     color: #0F2C4E;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
-    margin-top: -5px;
+    margin-top: -18px;
     position: absolute;
 }
 
 .ul li .a:hover {
     /* box-shadow:1px 1px 20px; */
     border-bottom: 5px rgb(150, 146, 146) solid;
+}
+
+
+/* img{width: 100px;position: fixed;  margin-top:64px;} */
+
+.log img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: -5px 5px 10px gray;
+    margin-right: 40px;
+    position: fixed;
+    margin-top: 5px;
+}
+
+
+/* .nav{position: fixed;} */
+
+ul {
+    list-style-type: none;
 }
 
 .join .a {
@@ -57,9 +72,7 @@ body {
 
 /* .nav{position: fixed;} */
 
-ul {
-    list-style-type: none;
-}
+
 
 a {
     text-decoration: none;
@@ -70,8 +83,8 @@ a {
 }
 
 .log img {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: -5px 5px 10px gray;

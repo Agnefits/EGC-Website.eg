@@ -63,7 +63,7 @@ main {
 }
 
 .assignment .assign {
-    background-color: #00698f;
+    background-color: #0F2C4E;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -73,10 +73,8 @@ main {
 }
 
 .assignment .assign:hover {
-    background-color: #0F2C4E;
     text-decoration: none;
     box-shadow: 0 0 10px #0F2B4E;
-    /* increase box shadow on hover */
 }
 
 .assign-container {
@@ -232,7 +230,10 @@ footer {
 .sidebar.open .logo-details .logo_name {
     opacity: 1;
 }
-
+.logo_style{
+    text-decoration: none;
+    color: #fff;
+}
 .sidebar .logo-details #btn {
     position: absolute;
     top: 50%;

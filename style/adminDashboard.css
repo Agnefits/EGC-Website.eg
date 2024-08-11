@@ -40,7 +40,11 @@ body {
     height: 65px;
     margin-top: 20px;
 }
+.logo_style{
+    text-decoration: none;
+    color: #fff;
 
+}
 .sidebar .logo-details .logo_name {
     color: #fff;
     font-size: 20px;
@@ -49,6 +53,7 @@ body {
     text-align: center;
     transition: all 0.5s ease;
     margin-top: 20px;
+    text-decoration: none;
 }
 
 .sidebar.open .logo-details .icon,

@@ -211,10 +211,12 @@ span {
 }
 
 [dir='rtl'] #more_news {
-    margin-right: 35%;
-    margin-left: 0;
+    position: absolute; /* take the button out of the normal flow */
+    left: 50%; /* move the button 50% from the left */
+    transform: translateX(-50%);
     font-family: "Cairo", sans-serif;
     font-weight: 700;
+    
 }
 
 [dir='rtl'] .college-name {
@@ -233,13 +235,28 @@ span {
 }
 
 [dir='rtl'] .logo {
-    margin-right: 30px;
+    margin-left: 10px;
+    width: 5vw;
 }
 
 [dir='rtl'] #footer-section {
     margin-right: 30px;
+    height: 570px;
+    width: 100%;
 }
 
-[dir='rtl'] .social {
-    margin-right: 130px;
-}
+[dir='rtl'] .social
+     {
+        float: right;
+    }
+
+    [dir='rtl'] .right-column
+    {
+       margin-right:50px;
+   }
+
+   [dir='rtl'] .map iframe
+   {
+    margin-right:15px;
+
+   }

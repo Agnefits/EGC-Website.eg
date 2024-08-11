@@ -55,7 +55,10 @@
             .sidebar.open .logo-details .logo_name {
                 opacity: 1;
             }
-            
+            .logo_style{
+                text-decoration: none;
+                color: #fff;
+            }
             .sidebar .logo-details #btn {
                 position: absolute;
                 top: 50%;
@@ -309,11 +312,15 @@
                 font-size: 18px;
                 font-weight: 200;
                 padding: 8px 15px;
-                border-radius: 5px;
+                border-radius: 15px;
                 cursor: pointer;
                 border: none;
                 margin: 10px 0px;
                 font-family:"Roboto Condensed", sans-serif;
+            }
+            button:hover
+            {
+                box-shadow: 0 0 10px #0F2B4E;
             }
             
             .posts .post {

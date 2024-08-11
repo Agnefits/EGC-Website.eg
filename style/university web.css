@@ -27,8 +27,6 @@
     transition: all 0.5s;
     z-index: 100;
 }
-
-
 /* ul{padding-left: 1%;} */
 
 .header-scrolled {
@@ -44,10 +42,13 @@
 
 .header a:hover {
     border-bottom: 3px solid white;
+   
 }
 
 .header a.active {
     border-bottom: 3px solid white;
+   
+    
 }
 
 .header ul li {
@@ -60,8 +61,8 @@
     /* columns: #fff; */
     font-size: 1.5vw;
     text-decoration: none;
-    color: #fff;
-    font-family: "Roboto Condensed", sans-serif;
+    color: #fff;  
+font-family: "Roboto Condensed", sans-serif;
 }
 
 #myVideo {
@@ -84,7 +85,6 @@
     margin-top: -15px;
 }
 
-
 /* .d2 {
     font-size: 10vw;
     
@@ -96,74 +96,70 @@ font-family: "Roboto Condensed", sans-serif;
 }
 
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
-    /* add padding to the container */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 100px; /* increase the padding left and right to 100px */
+  gap: 30px; /* keep the 20px gap between cards */
 }
 
 .card {
-    flex: 1 0 30%;
-    /* initial width: 30% */
-    padding: 10px;
-    /* add padding to the card */
-    border-radius: 10px;
-    border: 1px solid #ddd;
-    margin: 10px;
-    /* reduce margin to 10px */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transform: translateY(0);
-    /* add translate initial value */
-    transition: transform 0.3s ease-in-out;
-    /* add transition effect */
+  flex: 1 0 15%; /* reduce the initial width to 15% */
+  padding: 5px; /* reduce the padding to 5px */
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin: 10px; /* increase the margin to 10px */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
 }
 
+.card-content {
+  padding: 10px; /* reduce the padding to 10px */
+}
+
+.card-date {
+  font-size: 10px; /* reduce the font size to 12px */
+  margin-bottom: 5px; /* reduce the margin to 5px */
+}
 
 /* Medium screen size (e.g., tablet) */
-
 @media (max-width: 768px) {
-    .card {
-        flex: 1 0 45%;
-        /* adjust width to 45% for two cards per row */
-    }
+ .card {
+    flex: 1 0 35%; /* adjust width to 45% for two cards per row */
+  }
 }
+
+
+@media (max-width: 550px) {
+  .card {
+     flex: 1 0 50%; /* adjust width to 45% for two cards per row */
+   }
+ }
 
 
 /* Small screen size (e.g., mobile) */
-
 @media (max-width: 480px) {
-    .card {
-        flex: 1 0 100%;
-        /* adjust width to 100% for one card per row */
-    }
+ .card {
+    flex: 1 0 100%; /* adjust width to 100% for one card per row */
+  }
 }
 
-.card:hover {
-    transform: translateY(-10px) scale(1.02);
-    /* translate up and scale up on hover */
-    box-shadow: 0 0 30px #0F2B4E;
-    /* increase box shadow on hover */
-}
-
-.card-image {
+  
+  .card:hover {
+    transform: translateY(-10px) scale(1.02); /* translate up and scale up on hover */
+    box-shadow: 0 0 30px #0F2B4E; /* increase box shadow on hover */
+  }
+  
+  .card-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
-}
-
-.card-content {
-    padding: 20px;
-}
-
-.card-date {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 10px;
-}
-
-#more_news {
+  }
+  
+ 
+  #more_news {
     background: #29A4E2;
     border: none;
     width: 20%;
@@ -176,149 +172,127 @@ font-family: "Roboto Condensed", sans-serif;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transform: translateY(0);
     transition: transform 0.3s ease-in-out;
-    margin: 20px auto;
-    /* add margin top and bottom, and auto for left and right */
-    display: flex;
-    /* make the button a flex container */
-    justify-content: center;
-    /* center horizontally */
-    align-items: center;
-    /* center vertically */
-    text-align: center;
-    /* center text horizontally */
-    text-decoration: none;
-    /* remove underline */
-}
-
-#more_news:hover {
-    transform: translateY(-5px) scale(1.01);
-    /* translate up and scale up on hover */
-    box-shadow: 0 0 20px #0F2B4E;
-    /* increase box shadow on hover */
+    margin: 20px auto; /* add margin top and bottom, and auto for left and right */
+    display: flex; /* make the button a flex container */
+    justify-content: center; /* center horizontally */
+    align-items: center; /* center vertically */
+    text-align: center; /* center text horizontally */
+    text-decoration: none; /* remove underline */
+  }
+  
+  #more_news:hover {
+    transform: translateY(-5px) scale(1.01); /* translate up and scale up on hover */
+    box-shadow: 0 0 20px #0F2B4E; /* increase box shadow on hover */
     background-color: #0F2B4E;
-}
+  }
 
 .iden1 {
     font-size: 2vw;
     color: #0F2B4E;
 }
 
-#translate-btn {
-    padding-top: -20px;
-}
+#translate-btn{padding-top:-20px;}
+
+
+
 
 
 /* For small screens (e.g. mobile devices) */
-
 @media (max-width: 768px) {
     .card-image {
-        height: 150px;
-        /* reduce the image height for smaller screens */
-    }
-}
-
-
-/* For medium screens (e.g. tablets) */
-
-@media (min-width: 769px) and (max-width: 1024px) {
+       height: 150px; /* reduce the image height for smaller screens */
+     }
+   }
+   
+   /* For medium screens (e.g. tablets) */
+   @media (min-width: 769px) and (max-width: 1024px) {
     .card-image {
-        height: 200px;
-        /* adjust the image height for medium screens */
-    }
-}
-
-
-/* For large screens (e.g. desktops) */
-
-@media (min-width: 1025px) {
+       height: 200px; /* adjust the image height for medium screens */
+     }
+   }
+   
+   /* For large screens (e.g. desktops) */
+   @media (min-width: 1025px) {
     .card-image {
-        height: 250px;
-        /* restore the original image height for large screens */
-    }
-}
+       height: 250px; /* restore the original image height for large screens */
+     }
+   }
 
-@media only screen and (max-width: 768px) {
+
+   @media only screen and (max-width: 768px) {
     #more_news {
-        width: 40%;
-        /* increase width for smaller screens */
-        font-size: 2vw;
-        /* increase font size for smaller screens */
+      width: 40%; /* increase width for smaller screens */
+      font-size: 2vw; /* increase font size for smaller screens */
     }
-}
-
-
-/* For screens smaller than 480px (e.g., smaller mobile devices) */
-
-@media only screen and (max-width: 480px) {
+  }
+  
+  /* For screens smaller than 480px (e.g., smaller mobile devices) */
+  @media only screen and (max-width: 480px) {
     #more_news {
-        width: 30%;
-        /* increase width for even smaller screens */
-        font-size: 3vw;
-        /* increase font size for even smaller screens */
+      width: 30%; /* increase width for even smaller screens */
+      font-size: 3vw; /* increase font size for even smaller screens */
     }
-}
+  }
 
-@media (max-width: 480px) {
+
+
+
+
+  @media (max-width: 480px) {
     .cards-container {
-        justify-content: center;
+      justify-content: center;
     }
+  
     .card {
-        margin: 10px auto;
+      margin: 10px auto;
     }
+  
     h1 {
-        text-align: center;
+      text-align: center;
     }
+  
     .line {
-        margin: 5px auto;
+      margin: 5px auto;
     }
-}
+  }
 
 
+
+
+  
 /* For small screens (mobiles) */
-
 @media (max-width: 767px) {
-    .card-date {
-        font-size: 1em;
-        /* increase font size relative to parent element */
-        padding: 8px;
-        /* add more padding for better readability */
-        margin-bottom: 10px;
-        /* add more margin for better spacing */
-    }
-}
-
-@media (max-width: 550px) {
-    .card-date {
-        font-size: 10px;
-        /* increase font size for mobile devices */
-        padding: 1px;
-        /* add more padding for mobile devices */
-        margin-bottom: 12px;
-        /* add more margin for better spacing */
-    }
-}
+  .card-date {
+     font-size: 1em; 
+     padding: 8px; 
+     margin-bottom: 10px; 
+   }
+ }
 
 
-/* For mobile devices (max-width: 480px) */
-
+ @media (max-width: 550px) {
+  .card-date {
+     font-size: 10px;
+     padding: 1px;
+     margin-bottom: 12px; 
+    
+   }
+ }
+ /* For mobile devices (max-width: 480px) */
 @media (max-width: 480px) {
-    .card-date {
-        font-size: 8px;
-        /* increase font size for mobile devices */
-        padding: 1px;
-        /* add more padding for mobile devices */
-        margin-bottom: 10px;
-        /* add more margin for better spacing */
-    }
-}
+  .card-date {
+     font-size: 8px; 
+     padding: 1px; 
+     margin-bottom: 10px;
+    
+   }
+ }
 
-@media (max-width: 320px) {
-    .card-date {
-        font-size: 5px;
-        /* increase font size for mobile devices */
-        padding: 1px;
-        /* add more padding for mobile devices */
-        margin-bottom: 8px;
-        /* add more margin for better spacing */
-    }
-}
+ @media (max-width: 320px) {
+  .card-date {
+     font-size: 5px;
+     padding: 1px; 
+     margin-bottom: 8px; 
+     
+   }
+ }

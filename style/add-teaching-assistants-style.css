@@ -92,12 +92,19 @@ label.male,
     color: white;
     padding: 12px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
     width: 100%;
 }
+#add-teaching-assistant-button:hover
+{
+    
+    background-color: #0F2B4E;
+    box-shadow: 0 0 10px #0F2B4E;
+}
+
 
 label.male,
 .female,
@@ -149,8 +156,15 @@ label {
     background-color: rgb(42, 165, 232);
     color: #fff;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 15px;
 }
+.image_label:hover
+{
+    
+    background-color: #0F2B4E;
+    box-shadow: 0 0 10px #0F2B4E;
+}
+
 
 .image-input {
     display: none;

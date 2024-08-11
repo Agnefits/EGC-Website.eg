@@ -68,11 +68,17 @@ main {
     color: white;
     padding: 12px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
     width: 100%;
+}
+#add-doctor-button:hover
+{
+    
+    background-color: #0F2B4E;
+    box-shadow: 0 0 10px #0F2B4E;
 }
 
 #added-fields {
@@ -142,7 +148,13 @@ label {
     background-color: rgb(42, 165, 232);
     color: #fff;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 15px;
+}
+.btnProfilePicUpload:hover
+{
+    
+    background-color: #0F2B4E;
+    box-shadow: 0 0 10px #0F2B4E;
 }
 
 .btnCvUpload {

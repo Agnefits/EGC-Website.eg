@@ -55,7 +55,10 @@ body {
 .sidebar.open .logo-details .logo_name {
     opacity: 1;
 }
-
+.logo_style{
+    text-decoration: none;
+    color: #fff;
+}
 .sidebar .logo-details #btn {
     position: absolute;
     top: 50%;

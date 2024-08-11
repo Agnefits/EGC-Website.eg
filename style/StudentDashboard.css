@@ -55,7 +55,10 @@ body {
 .sidebar.open .logo-details .logo_name {
     opacity: 1;
 }
-
+.logo_style{
+    text-decoration: none;
+    color: #fff;
+}
 .sidebar .logo-details #btn {
     position: absolute;
     top: 50%;
@@ -340,14 +343,18 @@ table tr {
 }
 
 .btn {
-    padding: 5px 10px;
+    padding: 8px 10px;
     background-color: #0F2B4E;
     color: #fff;
     text-decoration: none;
     text-align: center;
     font-family:"Roboto Condensed", sans-serif;
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: 17px;
+}
+.btn:hover
+{
+    box-shadow: 0 0 10px #0F2B4E;
 }
 
 .container {

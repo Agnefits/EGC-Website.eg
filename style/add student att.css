@@ -45,6 +45,7 @@ select {
     padding: 8px;
     margin: 5px 0;
     border: 1px solid #ccc;
+    width: 250px;
 }
 
 ul {
@@ -83,6 +84,7 @@ button.absent,
 button.present,
 button.leave {
     background-color: #0F2B4E;
+    
 }
 
 button {

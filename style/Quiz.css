@@ -92,7 +92,7 @@ hr {
     color: white;
     padding: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
@@ -101,8 +101,8 @@ hr {
 }
 
 .btn:hover {
-    opacity: 1;
-    background-color: rgb(126, 180, 209);
+    box-shadow: 0 0 10px #0F2B4E;
+    background-color: #0F2B4E;
 }
 
 .quiz-box .question-number,

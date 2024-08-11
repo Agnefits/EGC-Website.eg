@@ -24,18 +24,19 @@ function zoomOut(element) {
     element.style.transform = "scale(1)";
 }
 
-const fileInput = document.getElementById('fileInput');
-const imageContainer = document.getElementById('imageContainer');
+
+
+
+
+const fileInput = document.getElementById('course_image');
+const imageContainer = document.getElementById('picturecourse');
 
 fileInput.addEventListener('change', function() {
     const file = fileInput.files[0];
     const reader = new FileReader();
 
     reader.onload = function(e) {
-        const img = new Image();
-        img.src = e.target.result;
-        imageContainer.innerHTML = '';
-        imageContainer.appendChild(img);
+        imageContainer.src = e.target.result;
     };
 
     reader.readAsDataURL(file);

@@ -55,7 +55,10 @@ body {
 .sidebar.open .logo-details .logo_name {
     opacity: 1;
 }
-
+.logo_style{
+    text-decoration: none;
+    color: #fff;
+}
 .sidebar .logo-details #btn {
     position: absolute;
     top: 50%;
@@ -332,4 +335,8 @@ main {
     right: 25px;
     bottom: 20px;
     font-family:"Roboto Condensed", sans-serif;
+}
+.btn-preview-quiz:hover
+{
+    box-shadow: 0 0 10px #0F2B4E;
 }
